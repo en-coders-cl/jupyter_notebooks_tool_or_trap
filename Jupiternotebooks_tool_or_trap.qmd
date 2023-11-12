@@ -1,0 +1,35 @@
+---
+title: "Jupyter Notebooks en el entorno laboral"
+subtitle: "¿Herramienta o trampa?"
+author: "en_coders: Rodo, Chris, Mati"
+date: last-modified
+date-format: "DD-MM-YYYY"
+# description: "Sometimes, it is enough to extract specific information from a model and then forget it, but in most cases, the challenge is to bring it to production or allow others to use it. Reproducibility is essential. Without the ability to replicate the results of a study, its findings cannot be trusted. Likewise, if you cannot reproduce a model in a production environment, you are wasting time and resources. \nIn this webinar, we will explore the importance of MLOps and good practices that allow the creation of effective and reproducible models"
+title-block-banner: "#27445C"
+# title-slide-attributes:
+#     data-background-image: figures/TripleTen_Backgrownd.png
+#     data-background-size: contain
+#     data-background-opacity: "0.03"
+format:
+  revealjs:
+    slide-number: true
+    logo: figures/Logo_principalEncoders.jpg
+    css: logo.css
+  # html:
+  #   embed-resources: true
+  #   smooth-scroll: true
+  #   theme: cosmo
+  #   fontcolor: black
+  #   toc: true
+  #   toc-location: left
+  #   toc-title: Summary
+  #   toc-depth: 3
+  # css: styles.css
+editor: source
+---
+
+# Jupyter Notebooks en el entorno laboral   
+
+------------------------------------------------------------------------
+
+
