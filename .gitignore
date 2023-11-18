@@ -52,3 +52,5 @@ figures
 Jupiternotebooks_tool_or_trap_files
 
 *.html
+*.tex
+*.log

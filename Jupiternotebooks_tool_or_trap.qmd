@@ -27,24 +27,25 @@ format:
 editor: source
 ---
 
-# Jupyter Notebooks en el entorno laboral   
+# Jupyter Notebooks en el entorno laboral
 
 ------------------------------------------------------------------------
 
-
-
 # Contexto y motivación
 
-- Jupyter Notebook es un tipo particular de Notebooks
-- Cuál es la utilidad de los notebooks?
-- Video de Joel
-- Esto es aplicable a más que solo datos
+-   Jupyter Notebook es un tipo particular de Notebooks
+-   Cuál es la utilidad de los notebooks?
+-   Video de Joel
+-   Esto es aplicable a más que solo datos
 
 <!-- TODO Mati -->
 
 # Por qué JN es tan popular
-    - Es la herramienta que típicamente usa la gente para enseñar
-    - A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
+
+```         
+- Es la herramienta que típicamente usa la gente para enseñar
+- A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
+```
 
 <!-- TODO Chris -->
 
@@ -52,9 +53,9 @@ editor: source
 
 <!-- TODO Mati -->
 
-- Fácil de comenzar a programar
-- Estéticamente bonito para varios
-- Fácil de leer el output
+-   Fácil de comenzar a programar
+-   Estéticamente bonito para varios
+-   Fácil de leer el output
 
 Ninguno de esos pros es fundamental en un ambiente laboral
 
@@ -63,24 +64,27 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 <!-- TODO Chris -->
 
 ## No es posible trackear cambios con Git
-- JSON
+
+-   JSON
 
 <!-- TODO Chris -->
 
 ## Orden de ejecución
-- Reproducibilidad 
+
+-   Reproducibilidad
 
 <!-- TODO Chris -->
 
 ## Datos sensibles publicados
 
-- Seguridad
-- JSON
+-   Seguridad
+-   JSON
 
 <!-- TODO Chris -->
 
 ## Las celdas te obligan a ejecutarlas enteras
-- Debugging
+
+-   Debugging
 
 <!-- TODO Rodo -->
 
@@ -88,16 +92,13 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Hay funciones que existen solo para JN y darán error fuera de ese contexto
 
-## No puedes usar multilenguaje 
+## No puedes usar multilenguaje
 
 ## Dependiendo del ambiente de desarrollo, podrías no tener linting, intellisense y otras herramientas fundamentales
 
 <!-- TODO Rodo Revisar si sigue siendo así en las últimas versiones  -->
 
-
 ## Otros
-
-
 
 # Alternativas
 
@@ -105,33 +106,31 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Usar celdas en .py
 
-- Demo
+-   Demo
 
-## Usar solo scripts .py en Visual Studio Code. 
-    
-    - Demo
-    - Configuración necesaria
-    
+## Usar solo scripts .py en Visual Studio Code.
+
+```         
+- Demo
+- Configuración necesaria
+```
+
 ## nbdev
 
 <!-- TODO Rodo  -->
 
-- Forma de desarrollar con JNs construida sobre Quarto
-
-
+-   Forma de desarrollar con JNs construida sobre Quarto
 
 ## Quarto
 
 <!-- TODO Rodo  -->
 
-- Cómo trabajar en archivos .py
-- Cómo ver datasets y plots
-- Cómo hacer reportes y notebooks
-- Cómo programar en multilenguaje
-- Cómo hacer presentaciones
-- Enfocarse en el contenido y el formato después
-
-
+-   Cómo trabajar en archivos .py
+-   Cómo ver datasets y plots
+-   Cómo hacer reportes y notebooks
+-   Cómo programar en multilenguaje
+-   Cómo hacer presentaciones
+-   Enfocarse en el contenido y el formato después
 
 # Cierre
 
@@ -139,36 +138,25 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
 
-Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.  
-
-
+Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
 
 # Referencias
 
 <!-- TODO Rodo -->
 
-- https://www.youtube.com/watch?v=7jiPeIFXb6U
-- https://www.youtube.com/watch?v=3Fa6uzHxTkQ
-- https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
-- https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
-- https://nbdev.fast.ai/
-- https://www.youtube.com/watch?v=l7zS8Ld4_iA
-- https://www.youtube.com/@howardjeremyp
-- https://quarto.org/
-
-
-
+-   https://www.youtube.com/watch?v=7jiPeIFXb6U
+-   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
+-   https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
+-   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
+-   https://nbdev.fast.ai/
+-   https://www.youtube.com/watch?v=l7zS8Ld4_iA
+-   https://www.youtube.com/@howardjeremyp
+-   https://quarto.org/
 
 <!-- # Tareas -->
 
 <!-- TODO Mati Buscar cómo visualizar tablas en VSCode -->
+
 <!-- TODO Chris Investigar cuál es la razón por la que muchas empresas usar JN en sus infraestructuras -->
+
 <!-- TODO Mati y Rodo usar nvdev -->
-
-
-
-
-
-
-
-
