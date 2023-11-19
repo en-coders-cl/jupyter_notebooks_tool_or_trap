@@ -36,6 +36,9 @@ editor: source
 -   Video de Joel
 -   Esto es aplicable a más que solo datos
 
+![](figures/reproducibility.png){.fragment .absolute width=60% height=50% top=350 right=300}
+
+
 <!-- TODO Mati -->
 
 ## Por qué JN es tan popular
@@ -60,6 +63,9 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 <!-- TODO Chris -->
 :::{.fragment}
 ### No es posible <span style="color:blue;"> trackear cambios</span> con Git
+
+![](figures/ops_problem_girl.jpg){.fragment .absolute width=50% height=50% top=200 right=-150}
+
 
 -   JSON
 :::
@@ -346,6 +352,9 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 :::{.fragment .fade-up}
 - Para qué complicarse la vida con deuda técnica y decir "solo estoy haciendo un EDA", si podemos hacer las cosas escalables y preproducibles desde el comienzo?
 :::
+
+![](figures/thats_the_neat.jpg){.fragment .absolute  top=0 right=200}
+
 
 ## Referencias
 
