@@ -29,9 +29,7 @@ editor: source
 
 # Jupyter Notebooks en el entorno laboral
 
-------------------------------------------------------------------------
-
-# Contexto y motivación
+## Contexto y motivación
 
 -   Jupyter Notebook es un tipo particular de Notebooks
 -   Cuál es la utilidad de los notebooks?
@@ -40,16 +38,14 @@ editor: source
 
 <!-- TODO Mati -->
 
-# Por qué JN es tan popular
+## Por qué JN es tan popular
 
-```         
 - Es la herramienta que típicamente usa la gente para enseñar
 - A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
-```
 
 <!-- TODO Chris -->
 
-# Pros de Jupyter Notebook
+## Pros de Jupyter Notebook
 
 <!-- TODO Mati -->
 
@@ -59,71 +55,234 @@ editor: source
 
 Ninguno de esos pros es fundamental en un ambiente laboral
 
-# Contras de Jupyter Notebook
+## Contras de Jupyter Notebook
 
 <!-- TODO Chris -->
-
-## No es posible trackear cambios con Git
+:::{.fragment}
+### No es posible trackear cambios con Git
 
 -   JSON
+:::
 
 <!-- TODO Chris -->
 
-## Orden de ejecución
+:::{.fragment}
+### Orden de ejecución
 
 -   Reproducibilidad
+:::
 
 <!-- TODO Chris -->
 
-## Datos sensibles publicados
+## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
+
+:::{.fragment}
+### Datos sensibles publicados
 
 -   Seguridad
 -   JSON
+:::
 
 <!-- TODO Chris -->
 
-## Las celdas te obligan a ejecutarlas enteras
+
+:::{.fragment}
+### Las celdas te obligan a ejecutarlas enteras
 
 -   Debugging
+:::
 
+
+## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
 <!-- TODO Rodo -->
 
-## Los ambientes virtuales de los JN y de la terminal son distintos
+:::{.fragment}
+### Los ambientes virtuales de los JN y de la terminal son distintos
 
-## Hay funciones que existen solo para JN y darán error fuera de ese contexto
+- Debugging
+:::
 
-## No puedes usar multilenguaje
 
-## Dependiendo del ambiente de desarrollo, podrías no tener linting, intellisense y otras herramientas fundamentales
+:::{.fragment}
+### Hay funciones que existen solo para JN y darán error fuera de ese contexto
+
+- Producción
+:::
+
+## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
+:::{.fragment}
+### No puedes usar multilenguaje
+
+- Flexibilidad
+:::
+
+:::{.fragment}
+### Dependiendo del ambiente de desarrollo, podrías no tener linting, intellisense y otras herramientas fundamentales
+
+- Facilidad de programación
+- Debugging
+:::
 
 <!-- TODO Rodo Revisar si sigue siendo así en las últimas versiones  -->
 
-## Otros
+:::{.fragment}
+### Otros
+:::
 
-# Alternativas
+
+## Alternativas, sus pros y contras
+
+### Jupyter Lab
+
+:::{.fragment}
+- Pros encontrados
+    
+      - Debugger
+      - Run relected text
+      - Intellisense
+      - Plots no detienen el progreso
+      - Tablas bien visualizadas 
+:::
+
+:::{.fragment}
+- Contras encontrados:
+    
+      - Ambientes distintos
+      - Multilenguaje
+      - Linting
+      - Formato JSON de archivos 
+      - Versionado con Git
+      - Seguridad
+      - Reproducibilidad por orden de ejecución
+:::
 
 <!-- TODO Rodo -->
 
-## Usar celdas en .py
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
--   Demo
+### Usar celdas en .py
 
-## Usar solo scripts .py en Visual Studio Code.
+:::{.fragment}
+- Pros encontrados
 
-```         
-- Demo
-- Configuración necesaria
-```
+      - Debugger
+      - Run relected text
+      - Intellisense
+      - Linting
+      - Versionado con Git
+      - Seguridad
+      - Reproducibilidad por orden de ejecución
+      - Formato JSON de archivos 
+      - Plots no detienen el progreso
+      - Tablas bien visualizadas 
+:::
 
-## nbdev
+:::{.fragment}
+- Contras encontrados:
+    
+      - Multilenguaje
+      - Ambientes distintos
+:::
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### Usar solo scripts .py en Visual Studio Code.
+
+:::{.fragment}
+- Pros encontrados
+
+      - Debugger
+      - Run relected text
+      - Intellisense
+      - Linting
+      - Versionado con Git
+      - Seguridad
+      - Reproducibilidad por orden de ejecución
+      - Formato JSON de archivos 
+      - Ambientes distintos
+:::
+
+:::{.fragment}
+- Contras encontrados:
+    
+      - Multilenguaje
+      - Plots bloqueando progreso
+      - Visualización de tablas
+:::
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### Demo .py en Visual Studio Code
+
+-  Configuración necesaria
+
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### nbdev
+
+:::{.fragment}
+- Pros encontrados
+    
+      - Debugger
+      - Run relected text
+      - Intellisense
+      - Seguridad
+      - Plots no detienen el progreso
+      - Tablas bien visualizadas 
+:::
+
+:::{.fragment}
+- Contras encontrados:
+    
+      - Ambientes distintos
+      - Multilenguaje
+      - Linting
+      - Formato JSON de archivos 
+      - Versionado con Git
+      - Reproducibilidad por orden de ejecución
+:::
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+### nbdev {visibility="uncounted"}
 
 <!-- TODO Rodo  -->
-
+:::{.fragment}
 -   Forma de desarrollar con JNs construida sobre Quarto
+:::
 
-## Quarto
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### Quarto
+
+:::{.fragment}
+- Pros encontrados
+
+      - Debugger
+      - Run relected text
+      - Intellisense
+      - Seguridad
+      - Ambientes distintos
+      - Multilenguaje
+      - Linting
+      - Formato JSON de archivos 
+      - Versionado con Git
+      - Reproducibilidad por orden de ejecución
+      - Plots no detienen el progreso
+      - Tablas bien visualizadas 
+:::
+
+:::{.fragment}
+- Contras encontrados:
+
+      - Nada
+:::
 
 <!-- TODO Rodo  -->
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### Demo Quarto
 
 -   Cómo trabajar en archivos .py
 -   Cómo ver datasets y plots
@@ -132,28 +291,46 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 -   Cómo hacer presentaciones
 -   Enfocarse en el contenido y el formato después
 
-# Cierre
+## Cierre
 
 <!-- TODO Rodo -->
 
-JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
+:::{.fragment}
+- JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
+:::
 
-Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
+:::{.fragment}
+- Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
+:::
 
-# Referencias
+:::{.fragment}
+- Hay otras herramientas estrictamente superiores, algunas mejores que otras. Mi favorita es Quarto, que tiene todas las ventajas y ninguna desventaja.
+:::
+
+:::{.fragment}
+- Para qué complicarse la vida con deuda técnica y decir "solo estoy haciendo un EDA", si podemos hacer las cosas escalables y preproducibles desde el comienzo?
+:::
+
+## Referencias
+
+![](figures/noted.png){.fragment width="350" height="200" fig-align="center"}
 
 <!-- TODO Rodo -->
 
--   https://www.youtube.com/watch?v=7jiPeIFXb6U
--   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
--   https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
--   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
--   https://nbdev.fast.ai/
--   https://www.youtube.com/watch?v=l7zS8Ld4_iA
--   https://www.youtube.com/@howardjeremyp
--   https://quarto.org/
+:::{.fragment}
 
-<!-- # Tareas -->
+    -   https://www.youtube.com/watch?v=7jiPeIFXb6U
+    -   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
+    -   https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
+    -   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
+    -   https://nbdev.fast.ai/
+    -   https://www.youtube.com/watch?v=l7zS8Ld4_iA
+    -   https://www.youtube.com/@howardjeremyp
+    -   https://quarto.org/
+
+:::
+
+<!-- ## Tareas -->
 
 <!-- TODO Mati Buscar cómo visualizar tablas en VSCode -->
 
