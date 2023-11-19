@@ -55,3 +55,4 @@ Jupiternotebooks_tool_or_trap_files
 *.tex
 *.log
 *.ipynb
+datasets
