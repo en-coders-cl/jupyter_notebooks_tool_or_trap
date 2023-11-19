@@ -59,7 +59,7 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 <!-- TODO Chris -->
 :::{.fragment}
-### No es posible trackear cambios con Git
+### No es posible <span style="color:blue;"> trackear cambios</span> con Git
 
 -   JSON
 :::
@@ -67,7 +67,7 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 <!-- TODO Chris -->
 
 :::{.fragment}
-### Orden de ejecución
+### <span style="color:blue;">Orden de ejecución </span>
 
 -   Reproducibilidad
 :::
@@ -77,7 +77,7 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 ## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
 
 :::{.fragment}
-### Datos sensibles publicados
+### <span style="color:blue;"> Datos sensibles</span> publicados
 
 -   Seguridad
 -   JSON
@@ -87,7 +87,7 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 
 :::{.fragment}
-### Las celdas te obligan a ejecutarlas enteras
+### Las celdas te obligan a <span style="color:blue;"> ejecutarlas enteras</span>
 
 -   Debugging
 :::
@@ -97,31 +97,42 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 <!-- TODO Rodo -->
 
 :::{.fragment}
-### Los ambientes virtuales de los JN y de la terminal son distintos
+### Los <span style="color:blue;"> ambientes virtuales</span> de los JN y de la terminal son distintos
 
 - Debugging
 :::
 
 
 :::{.fragment}
-### Hay funciones que existen solo para JN y darán error fuera de ese contexto
+### Hay <span style="color:blue;"> funciones que existen solo para JN</span> y darán error fuera de ese contexto
 
 - Producción
 :::
 
 ## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
 :::{.fragment}
-### No puedes usar multilenguaje
+### No puedes usar <span style="color:blue;"> multilenguaje </span>
 
 - Flexibilidad
 :::
 
 :::{.fragment}
-### Dependiendo del ambiente de desarrollo, podrías no tener linting, intellisense y otras herramientas fundamentales
+### Dependiendo del ambiente de desarrollo, podrías no tener <span style="color:blue;"> linting, intellisense y otras herramientas fundamentales</span>
+
 
 - Facilidad de programación
 - Debugging
 :::
+
+## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
+:::{.fragment}
+### Por defecto, los JN se ejecutan <span style="color:blue;"> partiendo de la ruta del archivo</span>
+
+- Reproducibilidad
+- Es configurable, pero hay que hacerlo
+
+:::
+
 
 <!-- TODO Rodo Revisar si sigue siendo así en las últimas versiones  -->
 
@@ -132,7 +143,11 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras
 
-### Jupyter Lab
+### <span style="color:blue;">Jupyter Lab</span>
+
+![](figures/JL.JPG){.fragment .absolute width=70% height=50% top=100 right=-150}
+
+
 
 :::{.fragment}
 - Pros encontrados
@@ -160,7 +175,9 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### Usar celdas en .py
+### <span style="color:blue;">Usar celdas en .py</span>
+
+![](figures/py_con_celdas.JPG){.fragment .absolute width=50% height=50% top=200 right=-150}
 
 :::{.fragment}
 - Pros encontrados
@@ -186,7 +203,9 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### Usar solo scripts .py en Visual Studio Code.
+### <span style="color:blue;">Usar solo scripts .py en Visual Studio Code</span>
+
+![](figures/py_sin_celdas.JPG){.fragment .absolute width=50% height=50% top=200 right=-150}
 
 :::{.fragment}
 - Pros encontrados
@@ -212,14 +231,19 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### Demo .py en Visual Studio Code
+### <span style="color:blue;">Usar solo scripts .py en Visual Studio Code</span>
 
--  Configuración necesaria
+![](figures/py_sin_celdas.JPG){.absolute width=50% height=50% top=200 right=-150}
+
+- Demo .py en Visual Studio Code
+- Configuración necesaria
 
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### nbdev
+### <span style="color:blue;">nbdev</span>
+
+![](figures/nbdev.png){.fragment .absolute width=50% height=40% top=300 right=-30}
 
 :::{.fragment}
 - Pros encontrados
@@ -244,7 +268,9 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 :::
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-### nbdev {visibility="uncounted"}
+### <span style="color:blue;">nbdev</span> {visibility="uncounted"}
+
+![](figures/nbdev.png){.absolute width=50% height=40% top=300 right=-30}
 
 <!-- TODO Rodo  -->
 :::{.fragment}
@@ -253,7 +279,12 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### Quarto
+### <span style="color:blue;">Quarto</span>
+
+![](figures/Quarto-blog-v3.jpg){.fragment .absolute width=40% height=30% top=200 right=0}
+
+
+
 
 :::{.fragment}
 - Pros encontrados
@@ -282,7 +313,12 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### Demo Quarto
+### <span style="color:blue;">Quarto</span>
+
+![](figures/Quarto-blog-v3.jpg){ .absolute width=40% height=30% top=200 right=0}
+
+
+#### Demo
 
 -   Cómo trabajar en archivos .py
 -   Cómo ver datasets y plots
@@ -293,21 +329,21 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Cierre
 
-<!-- TODO Rodo -->
-
-:::{.fragment}
+:::{.fragment .fade-up}
 - JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
 :::
 
-:::{.fragment}
+:::{.fragment .fade-up}
 - Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
 :::
 
-:::{.fragment}
+## Cierre {.placeholder-for-titleSlide visibility="uncounted"}
+
+:::{.fragment .fade-up}
 - Hay otras herramientas estrictamente superiores, algunas mejores que otras. Mi favorita es Quarto, que tiene todas las ventajas y ninguna desventaja.
 :::
 
-:::{.fragment}
+:::{.fragment .fade-up}
 - Para qué complicarse la vida con deuda técnica y decir "solo estoy haciendo un EDA", si podemos hacer las cosas escalables y preproducibles desde el comienzo?
 :::
 
@@ -329,6 +365,10 @@ Ninguno de esos pros es fundamental en un ambiente laboral
     -   https://quarto.org/
 
 :::
+
+
+
+
 
 <!-- ## Tareas -->
 
