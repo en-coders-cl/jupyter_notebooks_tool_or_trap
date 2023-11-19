@@ -31,20 +31,36 @@ editor: source
 
 ## Contexto y motivación
 
--   Jupyter Notebook es un tipo particular de Notebooks
+Para el caso de que alguien nunca haya visto un notebook ...
+
+![](figures/jupyter_example.jpg)
+
+### Definición
+
+"A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls. A notebook, along with an editor (like JupyterLab), provides a fast interactive environment for prototyping and explaining code, exploring and visualizing data, and sharing ideas with others."
+
+Source: https://docs.jupyter.org/en/latest/
+
+<!--![](figures/reproducibility.png){.fragment .absolute width="80%" height="70%" top="350" right="300"} -->
+
+### 
+
+<!--
 -   Cuál es la utilidad de los notebooks?
 -   Video de Joel
 -   Esto es aplicable a más que solo datos
-
-![](figures/reproducibility.png){.fragment .absolute width=60% height=50% top=350 right=300}
-
+-->
 
 <!-- TODO Mati -->
 
 ## Por qué JN es tan popular
 
-- Es la herramienta que típicamente usa la gente para enseñar
-- A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
+![](figures/reddit_sobre_notebooks.jpg)
+
+<!--
+-   Es la herramienta que típicamente usa la gente para enseñar
+-   A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
+-->
 
 <!-- TODO Chris -->
 
@@ -52,28 +68,32 @@ editor: source
 
 <!-- TODO Mati -->
 
+### Es estéticamente bonito
+
+![](figures/demo_bonito.jpg)
+<!--
 -   Fácil de comenzar a programar
 -   Estéticamente bonito para varios
 -   Fácil de leer el output
-
+-->
 Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Contras de Jupyter Notebook
 
 <!-- TODO Chris -->
-:::{.fragment}
-### No es posible <span style="color:blue;"> trackear cambios</span> con Git
 
-![](figures/ops_problem_girl.jpg){.fragment .absolute width=50% height=50% top=200 right=-150}
+::: fragment
+### No es posible [trackear cambios]{style="color:blue;"} con Git
 
+![](figures/ops_problem_girl.jpg){.fragment .absolute width="50%" height="50%" top="200" right="-150"}
 
 -   JSON
 :::
 
 <!-- TODO Chris -->
 
-:::{.fragment}
-### <span style="color:blue;">Orden de ejecución </span>
+::: fragment
+### [Orden de ejecución]{style="color:blue;"}
 
 -   Reproducibilidad
 :::
@@ -82,8 +102,8 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
 
-:::{.fragment}
-### <span style="color:blue;"> Datos sensibles</span> publicados
+::: fragment
+### [Datos sensibles]{style="color:blue;"} publicados
 
 -   Seguridad
 -   JSON
@@ -91,238 +111,249 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 <!-- TODO Chris -->
 
-
-:::{.fragment}
-### Las celdas te obligan a <span style="color:blue;"> ejecutarlas enteras</span>
+::: fragment
+### Las celdas te obligan a [ejecutarlas enteras]{style="color:blue;"}
 
 -   Debugging
 :::
 
-
 ## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
+
 <!-- TODO Rodo -->
 
-:::{.fragment}
-### Los <span style="color:blue;"> ambientes virtuales</span> de los JN y de la terminal son distintos
+::: fragment
+### Los [ambientes virtuales]{style="color:blue;"} de los JN y de la terminal son distintos
 
-- Debugging
+-   Debugging
 :::
 
+::: fragment
+### Hay [funciones que existen solo para JN]{style="color:blue;"} y darán error fuera de ese contexto
 
-:::{.fragment}
-### Hay <span style="color:blue;"> funciones que existen solo para JN</span> y darán error fuera de ese contexto
-
-- Producción
-:::
-
-## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
-:::{.fragment}
-### No puedes usar <span style="color:blue;"> multilenguaje </span>
-
-- Flexibilidad
-:::
-
-:::{.fragment}
-### Dependiendo del ambiente de desarrollo, podrías no tener <span style="color:blue;"> linting, intellisense y otras herramientas fundamentales</span>
-
-
-- Facilidad de programación
-- Debugging
+-   Producción
 :::
 
 ## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
-:::{.fragment}
-### Por defecto, los JN se ejecutan <span style="color:blue;"> partiendo de la ruta del archivo</span>
 
-- Reproducibilidad
-- Es configurable, pero hay que hacerlo
+::: fragment
+### No puedes usar [multilenguaje]{style="color:blue;"}
 
+-   Flexibilidad
 :::
 
+::: fragment
+### Dependiendo del ambiente de desarrollo, podrías no tener [linting, intellisense y otras herramientas fundamentales]{style="color:blue;"}
+
+-   Facilidad de programación
+-   Debugging
+:::
+
+## Contras de Jupyter Notebook {.placeholder-for-titleSlide visibility="uncounted"}
+
+::: fragment
+### Por defecto, los JN se ejecutan [partiendo de la ruta del archivo]{style="color:blue;"}
+
+-   Reproducibilidad
+-   Es configurable, pero hay que hacerlo
+:::
 
 <!-- TODO Rodo Revisar si sigue siendo así en las últimas versiones  -->
 
-:::{.fragment}
+::: fragment
 ### Otros
 :::
 
-
 ## Alternativas, sus pros y contras
 
-### <span style="color:blue;">Jupyter Lab</span>
+### [Jupyter Lab]{style="color:blue;"}
 
-![](figures/JL.JPG){.fragment .absolute width=70% height=50% top=100 right=-150}
+![](figures/JL.JPG){.fragment .absolute width="70%" height="50%" top="100" right="-150"}
 
+::: fragment
+-   Pros encontrados
 
-
-:::{.fragment}
-- Pros encontrados
-    
-      - Debugger
-      - Run relected text
-      - Intellisense
-      - Plots no detienen el progreso
-      - Tablas bien visualizadas 
+    ```         
+    - Debugger
+    - Run relected text
+    - Intellisense
+    - Plots no detienen el progreso
+    - Tablas bien visualizadas 
+    ```
 :::
 
-:::{.fragment}
-- Contras encontrados:
-    
-      - Ambientes distintos
-      - Multilenguaje
-      - Linting
-      - Formato JSON de archivos 
-      - Versionado con Git
-      - Seguridad
-      - Reproducibilidad por orden de ejecución
+::: fragment
+-   Contras encontrados:
+
+    ```         
+    - Ambientes distintos
+    - Multilenguaje
+    - Linting
+    - Formato JSON de archivos 
+    - Versionado con Git
+    - Seguridad
+    - Reproducibilidad por orden de ejecución
+    ```
 :::
 
 <!-- TODO Rodo -->
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### <span style="color:blue;">Usar celdas en .py</span>
+### [Usar celdas en .py]{style="color:blue;"}
 
-![](figures/py_con_celdas.JPG){.fragment .absolute width=50% height=50% top=200 right=-150}
+![](figures/py_con_celdas.JPG){.fragment .absolute width="50%" height="50%" top="200" right="-150"}
 
-:::{.fragment}
-- Pros encontrados
+::: fragment
+-   Pros encontrados
 
-      - Debugger
-      - Run relected text
-      - Intellisense
-      - Linting
-      - Versionado con Git
-      - Seguridad
-      - Reproducibilidad por orden de ejecución
-      - Formato JSON de archivos 
-      - Plots no detienen el progreso
-      - Tablas bien visualizadas 
+    ```         
+    - Debugger
+    - Run relected text
+    - Intellisense
+    - Linting
+    - Versionado con Git
+    - Seguridad
+    - Reproducibilidad por orden de ejecución
+    - Formato JSON de archivos 
+    - Plots no detienen el progreso
+    - Tablas bien visualizadas 
+    ```
 :::
 
-:::{.fragment}
-- Contras encontrados:
-    
-      - Multilenguaje
-      - Ambientes distintos
-:::
+::: fragment
+-   Contras encontrados:
 
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### <span style="color:blue;">Usar solo scripts .py en Visual Studio Code</span>
-
-![](figures/py_sin_celdas.JPG){.fragment .absolute width=50% height=50% top=200 right=-150}
-
-:::{.fragment}
-- Pros encontrados
-
-      - Debugger
-      - Run relected text
-      - Intellisense
-      - Linting
-      - Versionado con Git
-      - Seguridad
-      - Reproducibilidad por orden de ejecución
-      - Formato JSON de archivos 
-      - Ambientes distintos
-:::
-
-:::{.fragment}
-- Contras encontrados:
-    
-      - Multilenguaje
-      - Plots bloqueando progreso
-      - Visualización de tablas
+    ```         
+    - Multilenguaje
+    - Ambientes distintos
+    ```
 :::
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### <span style="color:blue;">Usar solo scripts .py en Visual Studio Code</span>
+### [Usar solo scripts .py en Visual Studio Code]{style="color:blue;"}
 
-![](figures/py_sin_celdas.JPG){.absolute width=50% height=50% top=200 right=-150}
+![](figures/py_sin_celdas.JPG){.fragment .absolute width="50%" height="50%" top="200" right="-150"}
 
-- Demo .py en Visual Studio Code
-- Configuración necesaria
+::: fragment
+-   Pros encontrados
 
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### <span style="color:blue;">nbdev</span>
-
-![](figures/nbdev.png){.fragment .absolute width=50% height=40% top=300 right=-30}
-
-:::{.fragment}
-- Pros encontrados
-    
-      - Debugger
-      - Run relected text
-      - Intellisense
-      - Seguridad
-      - Plots no detienen el progreso
-      - Tablas bien visualizadas 
+    ```         
+    - Debugger
+    - Run relected text
+    - Intellisense
+    - Linting
+    - Versionado con Git
+    - Seguridad
+    - Reproducibilidad por orden de ejecución
+    - Formato JSON de archivos 
+    - Ambientes distintos
+    ```
 :::
 
-:::{.fragment}
-- Contras encontrados:
-    
-      - Ambientes distintos
-      - Multilenguaje
-      - Linting
-      - Formato JSON de archivos 
-      - Versionado con Git
-      - Reproducibilidad por orden de ejecución
+::: fragment
+-   Contras encontrados:
+
+    ```         
+    - Multilenguaje
+    - Plots bloqueando progreso
+    - Visualización de tablas
+    ```
 :::
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-### <span style="color:blue;">nbdev</span> {visibility="uncounted"}
 
-![](figures/nbdev.png){.absolute width=50% height=40% top=300 right=-30}
+### [Usar solo scripts .py en Visual Studio Code]{style="color:blue;"}
+
+![](figures/py_sin_celdas.JPG){.absolute width="50%" height="50%" top="200" right="-150"}
+
+-   Demo .py en Visual Studio Code
+-   Configuración necesaria
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### [nbdev]{style="color:blue;"}
+
+![](figures/nbdev.png){.fragment .absolute width="50%" height="40%" top="300" right="-30"}
+
+::: fragment
+-   Pros encontrados
+
+    ```         
+    - Debugger
+    - Run relected text
+    - Intellisense
+    - Seguridad
+    - Plots no detienen el progreso
+    - Tablas bien visualizadas 
+    ```
+:::
+
+::: fragment
+-   Contras encontrados:
+
+    ```         
+    - Ambientes distintos
+    - Multilenguaje
+    - Linting
+    - Formato JSON de archivos 
+    - Versionado con Git
+    - Reproducibilidad por orden de ejecución
+    ```
+:::
+
+## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
+
+### [nbdev]{style="color:blue;"} {visibility="uncounted"}
+
+![](figures/nbdev.png){.absolute width="50%" height="40%" top="300" right="-30"}
 
 <!-- TODO Rodo  -->
-:::{.fragment}
+
+::: fragment
 -   Forma de desarrollar con JNs construida sobre Quarto
 :::
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### <span style="color:blue;">Quarto</span>
+### [Quarto]{style="color:blue;"}
 
-![](figures/Quarto-blog-v3.jpg){.fragment .absolute width=40% height=30% top=200 right=0}
+![](figures/Quarto-blog-v3.jpg){.fragment .absolute width="40%" height="30%" top="200" right="0"}
 
+::: fragment
+-   Pros encontrados
 
-
-
-:::{.fragment}
-- Pros encontrados
-
-      - Debugger
-      - Run relected text
-      - Intellisense
-      - Seguridad
-      - Ambientes distintos
-      - Multilenguaje
-      - Linting
-      - Formato JSON de archivos 
-      - Versionado con Git
-      - Reproducibilidad por orden de ejecución
-      - Plots no detienen el progreso
-      - Tablas bien visualizadas 
+    ```         
+    - Debugger
+    - Run relected text
+    - Intellisense
+    - Seguridad
+    - Ambientes distintos
+    - Multilenguaje
+    - Linting
+    - Formato JSON de archivos 
+    - Versionado con Git
+    - Reproducibilidad por orden de ejecución
+    - Plots no detienen el progreso
+    - Tablas bien visualizadas 
+    ```
 :::
 
-:::{.fragment}
-- Contras encontrados:
+::: fragment
+-   Contras encontrados:
 
-      - Nada
+    ```         
+    - Nada
+    ```
 :::
 
 <!-- TODO Rodo  -->
 
 ## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### <span style="color:blue;">Quarto</span>
+### [Quarto]{style="color:blue;"}
 
-![](figures/Quarto-blog-v3.jpg){ .absolute width=40% height=30% top=200 right=0}
-
+![](figures/Quarto-blog-v3.jpg){.absolute width="40%" height="30%" top="200" right="0"}
 
 #### Demo
 
@@ -335,26 +366,25 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Cierre
 
-:::{.fragment .fade-up}
-- JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
+::: {.fragment .fade-up}
+-   JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
 :::
 
-:::{.fragment .fade-up}
-- Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
+::: {.fragment .fade-up}
+-   Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
 :::
 
 ## Cierre {.placeholder-for-titleSlide visibility="uncounted"}
 
-:::{.fragment .fade-up}
-- Hay otras herramientas estrictamente superiores, algunas mejores que otras. Mi favorita es Quarto, que tiene todas las ventajas y ninguna desventaja.
+::: {.fragment .fade-up}
+-   Hay otras herramientas estrictamente superiores, algunas mejores que otras. Mi favorita es Quarto, que tiene todas las ventajas y ninguna desventaja.
 :::
 
-:::{.fragment .fade-up}
-- Para qué complicarse la vida con deuda técnica y decir "solo estoy haciendo un EDA", si podemos hacer las cosas escalables y preproducibles desde el comienzo?
+::: {.fragment .fade-up}
+-   Para qué complicarse la vida con deuda técnica y decir "solo estoy haciendo un EDA", si podemos hacer las cosas escalables y preproducibles desde el comienzo?
 :::
 
-![](figures/thats_the_neat.jpg){.fragment .absolute  top=0 right=200}
-
+![](figures/thats_the_neat.jpg){.fragment .absolute top="0" right="200"}
 
 ## Referencias
 
@@ -362,22 +392,18 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 <!-- TODO Rodo -->
 
-:::{.fragment}
-
-    -   https://www.youtube.com/watch?v=7jiPeIFXb6U
-    -   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
-    -   https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
-    -   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
-    -   https://nbdev.fast.ai/
-    -   https://www.youtube.com/watch?v=l7zS8Ld4_iA
-    -   https://www.youtube.com/@howardjeremyp
-    -   https://quarto.org/
-
+::: fragment
+```         
+-   https://www.youtube.com/watch?v=7jiPeIFXb6U
+-   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
+-   https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
+-   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
+-   https://nbdev.fast.ai/
+-   https://www.youtube.com/watch?v=l7zS8Ld4_iA
+-   https://www.youtube.com/@howardjeremyp
+-   https://quarto.org/
+```
 :::
-
-
-
-
 
 <!-- ## Tareas -->
 
