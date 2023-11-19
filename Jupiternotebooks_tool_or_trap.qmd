@@ -10,6 +10,11 @@ title-block-banner: "#27445C"
 #     data-background-size: contain
 #     data-background-opacity: "0.03"
 format:
+  # pdf:
+  #   toc: true
+  #   number-sections: true
+  #   colorlinks: true
+  #   css: logo.css
   revealjs:
     slide-number: true
     logo: figures/Logo_principalEncoders.jpg
