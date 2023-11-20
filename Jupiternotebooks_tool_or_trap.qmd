@@ -10,6 +10,8 @@ title-block-banner: "#27445C"
 #     data-background-size: contain
 #     data-background-opacity: "0.03"
 format:
+#   beamer: 
+#      toc: true
   # pdf:
   #   toc: true
   #   number-sections: true
@@ -19,16 +21,17 @@ format:
     slide-number: true
     logo: figures/Logo_principalEncoders.jpg
     css: logo.css
+    chalkboard: true
   # html:
-    # embed-resources: true
-    # smooth-scroll: true
-    # theme: cosmo
-    # fontcolor: black
-    # toc: true
-    # toc-location: left
-    # toc-title: Summary
-    # toc-depth: 3
-    # css: styles.css
+  #   embed-resources: true
+  #   smooth-scroll: true
+  #   theme: cosmo
+  #   fontcolor: black
+  #   toc: true
+  #   toc-location: left
+  #   toc-title: Summary
+  #   toc-depth: 3
+  #   css: styles.css
 editor: source
 ---
 
@@ -50,23 +53,25 @@ Source: https://docs.jupyter.org/en/latest/
 
 ### 
 
+```{=html}
 <!--
 -   Cuál es la utilidad de los notebooks?
 -   Video de Joel
 -   Esto es aplicable a más que solo datos
 -->
-
+```
 <!-- TODO Mati -->
 
 ## Por qué JN es tan popular
 
 ![](figures/reddit_sobre_notebooks.jpg)
 
+```{=html}
 <!--
 -   Es la herramienta que típicamente usa la gente para enseñar
 -   A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
 -->
-
+```
 <!-- TODO Chris -->
 
 ## Pros de Jupyter Notebook
@@ -75,13 +80,11 @@ Source: https://docs.jupyter.org/en/latest/
 
 ### Es estéticamente bonito
 
-![](figures/demo_bonito.jpg)
-<!--
+![](figures/demo_bonito.jpg) <!--
 -   Fácil de comenzar a programar
 -   Estéticamente bonito para varios
 -   Fácil de leer el output
--->
-Ninguno de esos pros es fundamental en un ambiente laboral
+--> Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Contras de Jupyter Notebook
 
@@ -170,204 +173,160 @@ Ninguno de esos pros es fundamental en un ambiente laboral
 
 ## Alternativas, sus pros y contras
 
-### [Jupyter Lab]{style="color:blue;"}
+```{r}
+library(tidyverse)
 
-![](figures/JL.JPG){.fragment .absolute width="70%" height="50%" top="100" right="-150"}
+funcionalidades = c(
+  "Debugger",
+  "Run selected text",
+  "Intellisense",
+  "Seguridad",
+  "No hay problema con ambientes distintos",
+  "Multilenguaje",
+  "Linting",
+  "No hay problema con formato JSON de archivos",
+  "Versionado con Git",
+  "No hay problema con reproducibilidad por orden de ejecución",
+  "Plots no detienen el progreso",
+  "Tablas bien visualizadas"
+)
 
-::: fragment
--   Pros encontrados
+data_alternativas =
+  data.frame(
+    "Funcionalidad" = funcionalidades,
+    "Jupyter_Notebook" = NA_character_,
+    "JupyterLabs" = NA_character_,
+    "py_con_celdas"  = NA_character_,
+    "py_sin_celdas"  = NA_character_,
+    "nbdev" = NA_character_,
+    "Quarto"  = NA_character_
+  )
 
-    ```         
-    - Debugger
-    - Run relected text
-    - Intellisense
-    - Plots no detienen el progreso
-    - Tablas bien visualizadas 
-    ```
+red_cross = "❌"
+green_check = "✅"
+
+data_alternativas$Jupyter_Notebook = red_cross
+data_alternativas$Quarto = green_check
+
+pros_JL = c(
+  "Debugger",
+  "Run selected text",
+  "Intellisense",
+  "Plots no detienen el progreso",
+  "Tablas bien visualizadas"
+)
+
+data_alternativas =
+  data_alternativas |>
+  mutate(JupyterLabs = if_else(Funcionalidad %in% pros_JL,
+                               true = green_check,
+                               false = red_cross))
+
+pros_py_con_celdas = c(
+  "Debugger",
+  "Run selected text",
+  "Intellisense",
+  "Linting",
+  "Seguridad",
+  "Versionado con Git",
+  "No hay problema con reproducibilidad por orden de ejecución",
+  "No hay problema con formato JSON de archivos",
+  "Plots no detienen el progreso",
+  "Tablas bien visualizadas"
+)
+
+data_alternativas =
+  data_alternativas |>
+  mutate(
+    py_con_celdas = if_else(
+      Funcionalidad %in% pros_py_con_celdas,
+      true = green_check,
+      false = red_cross
+    )
+  )
+
+pros_py_sin_celdas = c(
+  "Debugger",
+  "Run selected text",
+  "Intellisense",
+  "Seguridad",
+  "No hay problema con ambientes distintos",
+  "Linting",
+  "No hay problema con formato JSON de archivos",
+  "Versionado con Git",
+  "No hay problema con reproducibilidad por orden de ejecución"
+)
+
+data_alternativas =
+  data_alternativas |>
+  mutate(
+    py_sin_celdas = if_else(
+      Funcionalidad %in% pros_py_sin_celdas,
+      true = green_check,
+      false = red_cross
+    )
+  )
+
+pros_nbdev = c(
+  "Debugger",
+  "Run selected text",
+  "Intellisense",
+  "Seguridad",
+  "Plots no detienen el progreso",
+  "Tablas bien visualizadas"
+)
+
+data_alternativas =
+  data_alternativas |>
+  mutate(nbdev = if_else(
+    Funcionalidad %in% pros_nbdev,
+    true = green_check,
+    false = red_cross
+  ))
+
+tbl =
+  data_alternativas |>
+  gt::gt()
+
+tbl |>
+  gt::tab_options(
+    table.font.size = 13,
+    data_row.padding = gt::px(1),
+    summary_row.padding = gt::px(1),
+    grand_summary_row.padding = gt::px(1),
+    footnotes.padding = gt::px(1),
+    source_notes.padding = gt::px(1),
+    row_group.padding = gt::px(1)
+  ) 
+```
+
+
+::: {.r-stack}
+![](figures/JN.JPG){.fragment .absolute  top="100" right="0"}
+
+![](figures/JL.JPG){.fragment .absolute  top="100" right="0"}
+
+![](figures/py_con_celdas.JPG){.fragment .absolute top="100" right="0"}
+
+![](figures/py_sin_celdas.JPG){.fragment .absolute  top="100" right="0"}
+
+![](figures/nbdev.png){.fragment .absolute top="100" right="0"}
+
+![](figures/Quarto.JPG){.fragment .absolute  top="100" right="0"}
 :::
 
-::: fragment
--   Contras encontrados:
 
-    ```         
-    - Ambientes distintos
-    - Multilenguaje
-    - Linting
-    - Formato JSON de archivos 
-    - Versionado con Git
-    - Seguridad
-    - Reproducibilidad por orden de ejecución
-    ```
-:::
 
-<!-- TODO Rodo -->
 
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
 
-### [Usar celdas en .py]{style="color:blue;"}
+<!-- #### Demo -->
 
-![](figures/py_con_celdas.JPG){.fragment .absolute width="50%" height="50%" top="200" right="-150"}
-
-::: fragment
--   Pros encontrados
-
-    ```         
-    - Debugger
-    - Run relected text
-    - Intellisense
-    - Linting
-    - Versionado con Git
-    - Seguridad
-    - Reproducibilidad por orden de ejecución
-    - Formato JSON de archivos 
-    - Plots no detienen el progreso
-    - Tablas bien visualizadas 
-    ```
-:::
-
-::: fragment
--   Contras encontrados:
-
-    ```         
-    - Multilenguaje
-    - Ambientes distintos
-    ```
-:::
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### [Usar solo scripts .py en Visual Studio Code]{style="color:blue;"}
-
-![](figures/py_sin_celdas.JPG){.fragment .absolute width="50%" height="50%" top="200" right="-150"}
-
-::: fragment
--   Pros encontrados
-
-    ```         
-    - Debugger
-    - Run relected text
-    - Intellisense
-    - Linting
-    - Versionado con Git
-    - Seguridad
-    - Reproducibilidad por orden de ejecución
-    - Formato JSON de archivos 
-    - Ambientes distintos
-    ```
-:::
-
-::: fragment
--   Contras encontrados:
-
-    ```         
-    - Multilenguaje
-    - Plots bloqueando progreso
-    - Visualización de tablas
-    ```
-:::
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### [Usar solo scripts .py en Visual Studio Code]{style="color:blue;"}
-
-![](figures/py_sin_celdas.JPG){.absolute width="50%" height="50%" top="200" right="-150"}
-
--   Demo .py en Visual Studio Code
--   Configuración necesaria
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### [nbdev]{style="color:blue;"}
-
-![](figures/nbdev.png){.fragment .absolute width="50%" height="40%" top="300" right="-30"}
-
-::: fragment
--   Pros encontrados
-
-    ```         
-    - Debugger
-    - Run relected text
-    - Intellisense
-    - Seguridad
-    - Plots no detienen el progreso
-    - Tablas bien visualizadas 
-    ```
-:::
-
-::: fragment
--   Contras encontrados:
-
-    ```         
-    - Ambientes distintos
-    - Multilenguaje
-    - Linting
-    - Formato JSON de archivos 
-    - Versionado con Git
-    - Reproducibilidad por orden de ejecución
-    ```
-:::
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### [nbdev]{style="color:blue;"} {visibility="uncounted"}
-
-![](figures/nbdev.png){.absolute width="50%" height="40%" top="300" right="-30"}
-
-<!-- TODO Rodo  -->
-
-::: fragment
--   Forma de desarrollar con JNs construida sobre Quarto
-:::
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### [Quarto]{style="color:blue;"}
-
-![](figures/Quarto-blog-v3.jpg){.fragment .absolute width="40%" height="30%" top="200" right="0"}
-
-::: fragment
--   Pros encontrados
-
-    ```         
-    - Debugger
-    - Run relected text
-    - Intellisense
-    - Seguridad
-    - Ambientes distintos
-    - Multilenguaje
-    - Linting
-    - Formato JSON de archivos 
-    - Versionado con Git
-    - Reproducibilidad por orden de ejecución
-    - Plots no detienen el progreso
-    - Tablas bien visualizadas 
-    ```
-:::
-
-::: fragment
--   Contras encontrados:
-
-    ```         
-    - Nada
-    ```
-:::
-
-<!-- TODO Rodo  -->
-
-## Alternativas, sus pros y contras {.placeholder-for-titleSlide visibility="uncounted"}
-
-### [Quarto]{style="color:blue;"}
-
-![](figures/Quarto-blog-v3.jpg){.absolute width="40%" height="30%" top="200" right="0"}
-
-#### Demo
-
--   Cómo trabajar en archivos .py
--   Cómo ver datasets y plots
--   Cómo hacer reportes y notebooks
--   Cómo programar en multilenguaje
--   Cómo hacer presentaciones
--   Enfocarse en el contenido y el formato después
+<!-- -   Cómo trabajar en archivos .py -->
+<!-- -   Cómo ver datasets y plots -->
+<!-- -   Cómo hacer reportes y notebooks -->
+<!-- -   Cómo programar en multilenguaje -->
+<!-- -   Cómo hacer presentaciones -->
+<!-- -   Enfocarse en el contenido y el formato después -->
 
 ## Cierre
 
