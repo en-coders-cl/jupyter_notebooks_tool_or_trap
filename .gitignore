@@ -57,3 +57,8 @@ Jupiternotebooks_tool_or_trap_files
 *.ipynb
 datasets
 *_files/
+nul
+*.pdf
+renv
+*.lock
+.Rprofile
