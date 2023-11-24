@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebooks en el entorno laboral"
 subtitle: "¿Herramienta o trampa?"
-author: "Rodo, Chris, Mati"
+author: "Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
 date: last-modified
 date-format: "DD-MM-YYYY"
 title-block-banner: "#27445C"
@@ -35,36 +35,83 @@ format:
 editor: source
 ---
 
-# Jupyter Notebooks en el entorno laboral
+## Quiénes Somos
 
-## Contexto y motivación
+:::: columns
+::: {.column width="30%"}
+![](figures/linkedin.jpg)
+<font size = "6"> **Matías Carvajal** </font>
+<ul style="list-style-type:square">
+<li> <font size = "5"> 5 Años de experiencia </font></li>
+<li> <font size = "5"> Data Manager en Walmart </font></li>
+</ul>
+:::
 
-Para el caso de que alguien nunca haya visto un notebook ...
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
 
-![](figures/jupyter_example.jpg)
+::: {.column width="30%"}
+![](figures/linkedin.jpg) 
+<font size = "6"> **Rodolfo Nuñez** </font>
+<ul style="list-style-type:square">
+<li> <font size = "5"> 7 Años de experiencia </font></li>
+<li> <font size = "5"> Machine Learning Engineer en Entel </font></li>
+</ul>
+:::
 
-### Definición
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
 
-"A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls. A notebook, along with an editor (like JupyterLab), provides a fast interactive environment for prototyping and explaining code, exploring and visualizing data, and sharing ideas with others."
+::: {.column width="30%"}
+![](figures/linkedin.jpg) 
+<font size = "6"> **Christian Villaroel** </font>
+<ul style="list-style-type:square">
+<li> <font size = "5"> 7 Años de experiencia </font></li>
+<li> <font size = "5"> Data Scientist Expert Senior en Entel </font></li>
+</ul>
+:::
+::::
 
-Source: https://docs.jupyter.org/en/latest/
+## Nuestras Redes Sociales
 
-<!--![](figures/reproducibility.png){.fragment .absolute width="80%" height="70%" top="350" right="300"} -->
+:::: columns
+::: {.column width="30%"}
+![](figures/twitch_logo.png) 
+<font size ="6"> **Twitch** </font>
 
-### 
+<font size = "4">Los streaming son todos los martes de 7Pm a 9Pm hora chilena </font>
+:::
 
-```{=html}
-<!--
--   Cuál es la utilidad de los notebooks?
--   Video de Joel
--   Esto es aplicable a más que solo datos
--->
-```
-<!-- TODO Mati -->
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
 
-## Por qué JN es tan popular
+::: {.column width="30%"}
+![](figures/youtube_logo.png)
+<font size="6"> **Youtube** </font>
 
-![](figures/reddit_sobre_notebooks.jpg)
+<font size="4"> Resubimos los videos de los streaming editados a youtube </font>
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="30%"}
+![](figures/discord_logo.png)
+<font size="6"> **Discord** </font>
+
+<p class="small_linespace">
+<font size = "4"> Tenemos un discord para la comunidad donde compartimos links útiles, resolvemos dudas, recibimos sugerencias  entre otras cosas </font>
+</p>
+:::
+::::
+
+## ¿Por qué queremos hablar de Jupyter Notebook?
+
+![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
 ```{=html}
 <!--
@@ -300,32 +347,32 @@ tbl |>
   ) 
 ```
 
+::: r-stack
+![](figures/JN.JPG){.fragment .absolute top="100" right="0"}
 
-::: {.r-stack}
-![](figures/JN.JPG){.fragment .absolute  top="100" right="0"}
-
-![](figures/JL.JPG){.fragment .absolute  top="100" right="0"}
+![](figures/JL.JPG){.fragment .absolute top="100" right="0"}
 
 ![](figures/py_con_celdas.JPG){.fragment .absolute top="100" right="0"}
 
-![](figures/py_sin_celdas.JPG){.fragment .absolute  top="100" right="0"}
+![](figures/py_sin_celdas.JPG){.fragment .absolute top="100" right="0"}
 
 ![](figures/nbdev.png){.fragment .absolute top="100" right="0"}
 
-![](figures/Quarto.JPG){.fragment .absolute  top="100" right="0"}
+![](figures/Quarto.JPG){.fragment .absolute top="100" right="0"}
 :::
-
-
-
-
 
 <!-- #### Demo -->
 
 <!-- -   Cómo trabajar en archivos .py -->
+
 <!-- -   Cómo ver datasets y plots -->
+
 <!-- -   Cómo hacer reportes y notebooks -->
+
 <!-- -   Cómo programar en multilenguaje -->
+
 <!-- -   Cómo hacer presentaciones -->
+
 <!-- -   Enfocarse en el contenido y el formato después -->
 
 ## Cierre
