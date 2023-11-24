@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebooks en el entorno laboral"
 subtitle: "¿Herramienta o trampa?"
-author: "en_coders: Rodo, Chris, Mati"
+author: "Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
 date: last-modified
 date-format: "DD-MM-YYYY"
 title-block-banner: "#27445C"
@@ -35,36 +35,87 @@ format:
 editor: source
 ---
 
-# Jupyter Notebooks en el entorno laboral
+## La verdad
 
-## Contexto y motivación
+![](figures/destruccion_jupyters.png){fig-align="centered"}
 
-Para el caso de que alguien nunca haya visto un notebook ...
+## Quiénes Somos
 
-![](figures/jupyter_example.jpg)
+:::: columns
+::: {.column width="30%"}
+![](figures/linkedin.jpg)
+<font size = "6"> **Matías Carvajal** </font>
+<ul style="list-style-type:square">
+<li> <font size = "5"> 5 Años de experiencia </font></li>
+<li> <font size = "5"> Data Manager en Walmart </font></li>
+</ul>
+:::
 
-### Definición
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
 
-"A notebook is a shareable document that combines computer code, plain language descriptions, data, rich visualizations like 3D models, charts, graphs and figures, and interactive controls. A notebook, along with an editor (like JupyterLab), provides a fast interactive environment for prototyping and explaining code, exploring and visualizing data, and sharing ideas with others."
+::: {.column width="30%"}
+![](figures/linkedin.jpg) 
+<font size = "6"> **Rodolfo Nuñez** </font>
+<ul style="list-style-type:square">
+<li> <font size = "5"> 7 Años de experiencia </font></li>
+<li> <font size = "5"> Machine Learning Engineer en Entel </font></li>
+</ul>
+:::
 
-Source: https://docs.jupyter.org/en/latest/
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
 
-<!--![](figures/reproducibility.png){.fragment .absolute width="80%" height="70%" top="350" right="300"} -->
+::: {.column width="30%"}
+![](figures/linkedin.jpg) 
+<font size = "6"> **Christian Villaroel** </font>
+<ul style="list-style-type:square">
+<li> <font size = "5"> 7 Años de experiencia </font></li>
+<li> <font size = "5"> Data Scientist Expert Senior en Entel </font></li>
+</ul>
+:::
+::::
 
-### 
+## Nuestras Redes Sociales
 
-```{=html}
-<!--
--   Cuál es la utilidad de los notebooks?
--   Video de Joel
--   Esto es aplicable a más que solo datos
--->
-```
-<!-- TODO Mati -->
+:::: columns
+::: {.column width="30%"}
+![](figures/twitch_logo.png) 
+<font size ="6"> **Twitch** </font>
 
-## Por qué JN es tan popular
+<font size = "4">Los streaming son todos los martes de 7Pm a 9Pm hora chilena </font>
+:::
 
-![](figures/reddit_sobre_notebooks.jpg)
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="30%"}
+![](figures/youtube_logo.png)
+<font size="6"> **Youtube** </font>
+
+<font size="4"> Resubimos los videos de los streaming editados a youtube </font>
+:::
+
+::: {.column width="5%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="30%"}
+![](figures/discord_logo.png)
+<font size="6"> **Discord** </font>
+
+<p class="small_linespace">
+<font size = "4"> Tenemos un discord para la comunidad donde compartimos links útiles, resolvemos dudas, recibimos sugerencias  entre otras cosas </font>
+</p>
+:::
+::::
+
+## Motivacion del problema
+
+![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
 ```{=html}
 <!--
@@ -300,75 +351,76 @@ tbl |>
   ) 
 ```
 
+::: r-stack
+![](figures/JN.JPG){.fragment .absolute top="100" right="0"}
 
-::: {.r-stack}
-![](figures/JN.JPG){.fragment .absolute  top="100" right="0"}
-
-![](figures/JL.JPG){.fragment .absolute  top="100" right="0"}
+![](figures/JL.JPG){.fragment .absolute top="100" right="0"}
 
 ![](figures/py_con_celdas.JPG){.fragment .absolute top="100" right="0"}
 
-![](figures/py_sin_celdas.JPG){.fragment .absolute  top="100" right="0"}
+![](figures/py_sin_celdas.JPG){.fragment .absolute top="100" right="0"}
 
 ![](figures/nbdev.png){.fragment .absolute top="100" right="0"}
 
-![](figures/Quarto.JPG){.fragment .absolute  top="100" right="0"}
+![](figures/Quarto.JPG){.fragment .absolute top="100" right="0"}
 :::
-
-
-
-
 
 <!-- #### Demo -->
 
 <!-- -   Cómo trabajar en archivos .py -->
+
 <!-- -   Cómo ver datasets y plots -->
+
 <!-- -   Cómo hacer reportes y notebooks -->
+
 <!-- -   Cómo programar en multilenguaje -->
+
 <!-- -   Cómo hacer presentaciones -->
+
 <!-- -   Enfocarse en el contenido y el formato después -->
 
-## Cierre
+## En resumen
 
 ::: {.fragment .fade-up}
--   JN es una herramienta sub-óptima en todo aspecto, pero en donde más se nota es en un ambiente laboral.
+- Jupyter Notebook es una herramienta sub-óptima en todo aspecto, las mejoras en sus funcionalidades mas bien vienen de las features de otras IDE/herramientas como Jupyterlab, VS Code, nbdev más que de el mismo.
 :::
 
 ::: {.fragment .fade-up}
--   Sin embargo, que no sea tan riesgoso al estar aprendiendo, hace que genere vicios que después es deifícil sacarse.
+- En un ambiente laboral no existe eso de "estoy haciendo una exploración y ya". Todo código que es finalmente **útil** termina en **producción** y **nunca**
+se trabaja solo. Por lo tanto, es muy importante cuidar la forma en que programamos.
 :::
 
-## Cierre {.placeholder-for-titleSlide visibility="uncounted"}
+## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
--   Hay otras herramientas estrictamente superiores, algunas mejores que otras. Mi favorita es Quarto, que tiene todas las ventajas y ninguna desventaja.
+- Hay otras herramientas estrictamente superiores. La favorita de Rodo es Quarto, que tiene todas las ventajas y ninguna desventaja.
 :::
 
+## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 ::: {.fragment .fade-up}
--   Para qué complicarse la vida con deuda técnica y decir "solo estoy haciendo un EDA", si podemos hacer las cosas escalables y preproducibles desde el comienzo?
+![](figures/thats_the_neat.jpg){height="550" fig-align="centered"}
 :::
-
-![](figures/thats_the_neat.jpg){.fragment .absolute top="0" right="200"}
 
 ## Referencias
 
-![](figures/noted.png){.fragment width="350" height="200" fig-align="center"}
 
-<!-- TODO Rodo -->
 
 ::: fragment
-```         
--   https://www.youtube.com/watch?v=7jiPeIFXb6U
+       
+-   **https://www.youtube.com/watch?v=7jiPeIFXb6U**
 -   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
--   https://www.youtube.com/watch?v=1ISrRp6n2Tg&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
 -   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
 -   https://nbdev.fast.ai/
 -   https://www.youtube.com/watch?v=l7zS8Ld4_iA
--   https://www.youtube.com/@howardjeremyp
 -   https://quarto.org/
-```
+
 :::
 
+## Referencias {.placeholder-for-titleSlide visibility="uncounted"}
+
+::: {.fragment .fade-up}
+![](figures/joel_grus.jpg){fig-align="centered"}
+:::
 <!-- ## Tareas -->
 
 <!-- TODO Mati Buscar cómo visualizar tablas en VSCode -->
