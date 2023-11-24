@@ -35,6 +35,10 @@ format:
 editor: source
 ---
 
+## La verdad
+
+![](figures/destruccion_jupyters.png){fig-align="centered"}
+
 ## Quiénes Somos
 
 :::: columns
