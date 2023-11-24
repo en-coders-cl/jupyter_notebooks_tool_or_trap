@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebooks en el entorno laboral"
 subtitle: "¿Herramienta o trampa?"
-author: "en_coders: Rodo, Chris, Mati"
+author: "Rodo, Chris, Mati"
 date: last-modified
 date-format: "DD-MM-YYYY"
 title-block-banner: "#27445C"
