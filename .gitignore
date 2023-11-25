@@ -62,3 +62,4 @@ nul
 renv
 *.lock
 .Rprofile
+.ipynb_checkpoints
