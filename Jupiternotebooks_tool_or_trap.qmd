@@ -32,9 +32,7 @@ format:
   #   toc-title: Summary
   #   toc-depth: 3
   #   css: styles.css
-editor: source
-  markdown:
-    wrap: 72
+ 
 ---
 
 ## La verdad
@@ -77,7 +75,7 @@ editor: source
 :::
 
 ::: {.column width="30%"}
-![](figures/chris.jpg) <font size = "6"> **Christian Villaroel** </font>
+![](figures/chris.png) <font size = "6"> **Christian Villaroel** </font>
 
 <ul style="list-style-type:square">
 
@@ -143,7 +141,7 @@ Facilitación del Aprendizaje de Programación para No Desarrolladores
 
 ## Actividades Clave para Científicos de Datos en Empresas
 
-![](figures/meme_meme_laboral_1.jpg){fig-align="left"}
+![](figures/meme_meme_laboral_1.jpg){fig-align="centered"}
 
 1.  Análisis exploratorio
 2.  Creación de reportes
@@ -152,19 +150,37 @@ Facilitación del Aprendizaje de Programación para No Desarrolladores
 
 ## Análisis exploratorio
 
+::: columns
+::: {.column width="50%"}
 ![](figures/meme_exploratorio_meme_1.jpg){fig-align="left"}
+:::
+::: {.column width="50%"}
+
 ![](figures/meme_exploratorio_meme_2.jpg){fig-align="right"}
+:::
+:::
 
 ## Creación de reportes
 
+::: columns
+::: {.column width="50%"}
 ![](figures/meme_reporte_meme_1.jpg){fig-align="left"}
+:::
+::: {.column width="50%"}
 ![](figures/meme_reporte_meme_2.jpg){fig-align="right"}
+:::
+:::
 
 ## Desarrollo de aplicativo analítico.
 
-
+::: columns
+::: {.column width="50%"}
 ![](figures/meme_desarrollo_meme_1.jpg){fig-align="left"}
+:::
+::: {.column width="50%"}
 ![](figures/meme_desarrollo_meme_2.jpg){fig-align="right"}
+:::
+:::
 
 ## Alternativas, sus pros y contras
 
