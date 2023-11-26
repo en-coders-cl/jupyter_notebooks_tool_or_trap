@@ -137,13 +137,6 @@ format:
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
-```{=html}
-<!--
--   Es la herramienta que típicamente usa la gente para enseñar
--   A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
--->
-```
-<!-- TODO Chris -->
 
 ## Notebooks: Puente entre código y ciencia de datos para estudiantes
 
