@@ -22,6 +22,7 @@ format:
     logo: figures/Logo_principalEncoders.jpg
     css: logo.css
     chalkboard: true
+    theme: dark
   # html:
   #   embed-resources: true
   #   smooth-scroll: true
@@ -32,7 +33,6 @@ format:
   #   toc-title: Summary
   #   toc-depth: 3
   #   css: styles.css
- 
 ---
 
 ## La verdad
@@ -65,7 +65,7 @@ format:
 
 <li><font size = "5"> 7 Años de experiencia </font></li>
 
-<li><font size = "5"> Machine Learning Engineer en Entel </font></li>
+<li><font size = "5"> Sr. Machine Learning Operations Engineer en Entel / Tutor de DS y DA en TripleTen </font></li>
 
 </ul>
 :::
@@ -94,7 +94,6 @@ format:
 ![](figures/twitch_logo.png) <font size ="6"> **Twitch** </font>
 
 <h7>Los streaming son todos los martes de **7Pm a 9Pm hora chilena**</h7>
-
 :::
 
 ::: {.column width="5%"}
@@ -104,7 +103,7 @@ format:
 ::: {.column width="30%"}
 ![](figures/youtube_logo.png) <font size="6"> **Youtube** </font>
 
-<h7> Resubimos los **videos** de los streaming editados a youtube </h7>
+<h7> Resubimos los **videos** de los streaming editados a YouTube </h7>
 :::
 
 ::: {.column width="5%"}
@@ -114,29 +113,25 @@ format:
 ::: {.column width="30%"}
 ![](figures/discord_logo.png) <font size="6"> **Discord** </font>
 
-
-<h7> Tenemos un discord para la comunidad donde compartimos **links útiles**, resolvemos **dudas**, recibimos **sugerencias** entre otras cosas </h7>
-
+<h7> Tenemos un Discord para la comunidad donde compartimos **links útiles**, resolvemos **dudas**, recibimos **sugerencias** entre otras cosas </h7>
 :::
 :::
 
-## Los Jupyter Notebooks que SON
+## Qué SON los Jupyter Notebooks
 
-![](figures/que_es_un_jupyter.png)
+![](figures/JN.JPG)
 
-## Los Jupyter Notebooks que NO son: Jupyter Lab
+## Qué NO son los Jupyter Notebooks: Jupyter Lab
 
-![](figures/jupyter_lab.png)
+![](figures/JL.JPG)
 
-
-## Los Jupyter Notebooks que NO son: Visual Studio Code
+## Qué NO son los Jupyter Notebooks: Visual Studio Code
 
 ![](figures/vs_code_jupyter.png)
 
-## Los Jupyter Notebooks que SON: formato .ipynb
+## Qué SON los Jupyter Notebooks: formato .ipynb
 
 ![](figures/formato_ipynb.png)
-
 
 ## Motivación del problema
 
@@ -150,12 +145,11 @@ format:
 ```
 <!-- TODO Chris -->
 
-## Notebooks: Puente entre Código y Ciencia de Datos para Estudiantes
+## Notebooks: Puente entre código y ciencia de datos para estudiantes
 
 ::: columns
-
 ::: {.column width="50%"}
-- Facilitación del aprendizaje de programación para **no desarrolladores**
+-   Facilitación del aprendizaje de programación para **no desarrolladores**
 
 ![](figures/loco_programando.png){fig-align="centered" height="300"}
 :::
@@ -167,18 +161,15 @@ format:
 ::: {.column width="40%"}
 ![](figures/meme_educativo_1.jpg){fig-align="right"}
 :::
-
-
-
 :::
-## Actividades Clave para Científicos de Datos en Empresas
+
+## Actividades clave para científicos de datos en empresas
 
 ::: columns
-
 ::: {.column width="50%"}
-1. Análisis exploratorio
-2. Creación de reportes
-3. Desarrollo de aplicativo analítico.
+1.  Análisis exploratorio
+2.  Creación de reportes
+3.  Desarrollo de aplicativo analítico.
 :::
 
 ::: {.column width="10%"}
@@ -187,19 +178,19 @@ format:
 
 ::: {.column width="40%"}
 <!-- empty column to create gap -->
+
 ![](figures/meme_meme_laboral_1.jpg){fig-align="centered"}
 :::
-
-
 :::
+
 ## Análisis exploratorio
 
 ::: columns
 ::: {.column width="50%"}
 ![](figures/meme_exploratorio_meme_1.jpg){fig-align="left"}
 :::
-::: {.column width="50%"}
 
+::: {.column width="50%"}
 ![](figures/meme_exploratorio_meme_2.jpg){fig-align="right"}
 :::
 :::
@@ -210,8 +201,9 @@ format:
 ::: {.column width="50%"}
 ![](figures/meme_reporte_meme_1.jpg){fig-align="left" height="600"}
 :::
+
 ::: {.column width="50%"}
-![](figures/meme_reporte_meme_2.jpg){fig-align="right"}
+![](figures/meme_reporte_meme_2.png){fig-align="right"}
 :::
 :::
 
@@ -221,6 +213,7 @@ format:
 ::: {.column width="50%"}
 ![](figures/meme_desarrollo_meme_1.jpg){fig-align="left"}
 :::
+
 ::: {.column width="50%"}
 ![](figures/meme_desarrollo_meme_2.jpg){fig-align="right"}
 :::
@@ -337,7 +330,8 @@ data_alternativas =
     Funcionalidad %in% pros_nbdev,
     true = green_check,
     false = red_cross
-  ))
+  )) |> 
+  select(-nbdev)
 
 tbl =
   data_alternativas |>
@@ -390,30 +384,45 @@ tbl |>
 :::
 
 ::: {.fragment .fade-up}
--   En un ambiente laboral no existe eso de "estoy haciendo una exploración y ya". Todo código que es finalmente **útil** termina en **producción** y **nunca** se trabaja solo. Por lo tanto, es muy importante cuidar la forma en que programamos.
+-   En un ambiente laboral no existe eso de "estoy haciendo una exploración y ya". Todo código que es finalmente **útil** debe ser fácilmente versionado, llegue a **producción** o no. **Uno siempre trabaja con alguien más**, aunque a veces ese "alguien más" sea tu "yo" del futuro. Por lo tanto, es muy importante cuidar la forma en que programamos.
 :::
 
 ## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
--   Hay otras herramientas estrictamente superiores. La favorita de Rodo es Quarto, que tiene todas las ventajas y ninguna desventaja.
+-   Hay otras herramientas estrictamente superiores. La favorita de Rodo es **Quarto**, que tiene no tiene **ninguna de las desventajas** mencionadas y tiene **todas las ventajas** de JN **y muchas más**.
 :::
 
 ## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
-![](figures/thats_the_neat.jpg){height="550" fig-align="centered"}
+![](figures/thats_the_neat.jpg){fig-align="center" height="550"}
 :::
 
 ## Referencias
 
 ::: fragment
--   **https://www.youtube.com/watch?v=7jiPeIFXb6U**
--   https://www.youtube.com/watch?v=3Fa6uzHxTkQ
--   https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D
--   https://nbdev.fast.ai/
--   https://www.youtube.com/watch?v=l7zS8Ld4_iA
--   https://quarto.org/
+<font size = "5">- [I don't like notebooks.- Joel Grus](https://www.youtube.com/watch?v=7jiPeIFXb6U) </font>
+
+<font size = "5">- [I Don't Like Jupyter Notebooks - Joel Grus - MLOps Community](https://www.youtube.com/watch?v=3Fa6uzHxTkQ)</font>
+
+<font size = "5">- [I Like Notebooks - Jeremy Howard](https://www.youtube.com/watch?v=9Q6sLbz37gk&pp=ygUTam9lbCBncnVzIG5vdGVib29rcw%3D%3D) </font>
+
+<font size = "5">- [nbdev tutorial - Jeremy Howard](https://www.youtube.com/watch?v=l7zS8Ld4_iA)</font>
+
+<font size = "5">- [nbdev official site](https://nbdev.fast.ai/)</font>
+
+<font size = "5">- [Quarto official site](https://quarto.org/)</font>
+
+<font size = "5">- [Publishing Jupyter Notebooks with Quarto - J.J. Allaire](https://www.youtube.com/watch?v=nllKcuX7rEc&ab_channel=DataCouncil)</font>
+
+<font size = "5">- [Quarto - J.J. Allaire](https://www.youtube.com/watch?v=9jGc0TxoRco)</font>
+
+<font size = "5">- [Welcome to Quarto Workshop! - Tom Mock, Posit](https://www.youtube.com/watch?v=yvi5uXQMvu4&ab_channel=PositPBC){.uri}</font>
+
+<font size = "5">- [Quarto for Academics \| Mine Çetinkaya-Rundel](https://www.youtube.com/watch?v=EbAAmrB0luA)</font>
+
+<font size = "5">- [Introduction to Quarto \| Blogging, Knowledge Sharing, Writing a Book - Hamel Husain](https://www.youtube.com/watch?v=IqB-zVc5NgI)</font>
 :::
 
 ## Referencias {.placeholder-for-titleSlide visibility="uncounted"}
@@ -425,8 +434,6 @@ tbl |>
 ## 
 
 <h8> ¿Alguna duda? </h8>
-
-
 
 <!-- ## Tareas -->
 
