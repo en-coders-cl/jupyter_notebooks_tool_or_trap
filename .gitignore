@@ -48,7 +48,19 @@ po/*~
 # RStudio Connect folder
 rsconnect/
 
-figures
+
 Jupiternotebooks_tool_or_trap_files
 
 *.html
+*.tex
+*.log
+*.ipynb
+datasets
+figures
+*_files/
+nul
+*.pdf
+renv
+*.lock
+.Rprofile
+.ipynb_checkpoints
