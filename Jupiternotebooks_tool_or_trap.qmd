@@ -133,6 +133,11 @@ format:
 
 ![](figures/vs_code_jupyter.png)
 
+## Los Jupyter Notebooks que SON: formato .ipynb
+
+![](figures/formato_ipynb.png)
+
+
 ## Motivación del problema
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
@@ -147,19 +152,46 @@ format:
 
 ## Notebooks: Puente entre Código y Ciencia de Datos para Estudiantes
 
-![](figures/meme_educativo_1.jpg){fig-align="centered"}
+::: columns
 
-Facilitación del Aprendizaje de Programación para No Desarrolladores
+::: {.column width="50%"}
+- Facilitación del aprendizaje de programación para **no desarrolladores**
 
+![](figures/loco_programando.png){fig-align="centered" height="300"}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="40%"}
+![](figures/meme_educativo_1.jpg){fig-align="right"}
+:::
+
+
+
+:::
 ## Actividades Clave para Científicos de Datos en Empresas
 
+::: columns
+
+::: {.column width="50%"}
+1. Análisis exploratorio
+2. Creación de reportes
+3. Desarrollo de aplicativo analítico.
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="40%"}
+<!-- empty column to create gap -->
 ![](figures/meme_meme_laboral_1.jpg){fig-align="centered"}
-
-1.  Análisis exploratorio
-2.  Creación de reportes
-3.  Desarrollo de aplicativo analítico.
+:::
 
 
+:::
 ## Análisis exploratorio
 
 ::: columns
@@ -176,7 +208,7 @@ Facilitación del Aprendizaje de Programación para No Desarrolladores
 
 ::: columns
 ::: {.column width="50%"}
-![](figures/meme_reporte_meme_1.jpg){fig-align="left"}
+![](figures/meme_reporte_meme_1.jpg){fig-align="left" height="600"}
 :::
 ::: {.column width="50%"}
 ![](figures/meme_reporte_meme_2.jpg){fig-align="right"}
