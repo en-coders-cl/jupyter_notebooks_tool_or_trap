@@ -65,7 +65,7 @@ format:
 
 <li><font size = "5"> 7 Años de experiencia </font></li>
 
-<li><font size = "5"> Sr. Machine Learning Operations Engineer en Entel</font></li>
+<li><font size = "5"> Sr. MLOps Engineer Entel / Tutor de DS y DA en TripleTen</font></li>
 
 </ul>
 :::
