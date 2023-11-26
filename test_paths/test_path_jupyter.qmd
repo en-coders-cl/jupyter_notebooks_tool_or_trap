@@ -1,0 +1,28 @@
+---
+title: "asdf"
+format: html
+jupyter: python3
+project:
+  execute-dir: project
+---
+
+## Ejemplo rutas
+
+```{python}
+import pandas as pd
+import matplotlib.pyplot as plt
+```
+
+
+```{python}
+orders         = pd.read_csv('datasets/input/instacart_orders.csv', sep=';')
+products       = pd.read_csv('datasets/input/products.csv', sep=';')
+departments    = pd.read_csv('datasets/input/departments.csv', sep=';')
+aisles         = pd.read_csv('datasets/input/aisles.csv', sep=';')
+order_products = pd.read_csv('datasets/input/order_products.csv', sep=';')
+```
+
+
+```{python}
+order_products
+```
