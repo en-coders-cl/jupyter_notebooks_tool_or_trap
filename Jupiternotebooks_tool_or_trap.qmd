@@ -75,7 +75,7 @@ format:
 :::
 
 ::: {.column width="30%"}
-![](figures/chris.png) <font size = "6"> **Christian Villaroel** </font>
+![](figures/chris.png) <font size = "6"> **Christian Villarroel** </font>
 
 <ul style="list-style-type:square">
 
@@ -137,13 +137,6 @@ format:
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
-```{=html}
-<!--
--   Es la herramienta que típicamente usa la gente para enseñar
--   A los profesores les es muy cómodo recibir las respuestas sin ejecutar el código, y así no se tienen que preocupar de la reproducibilidad del código.
--->
-```
-<!-- TODO Chris -->
 
 ## Notebooks: Puente entre código y ciencia de datos para estudiantes
 
@@ -373,34 +366,6 @@ tbl |>
   ) 
 ```
 
-::: r-stack
-![](figures/JN.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/JL.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/py_con_celdas.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/py_sin_celdas.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/nbdev.png){.fragment .absolute top="100" right="0"}
-
-![](figures/Quarto.JPG){.fragment .absolute top="100" right="0"}
-:::
-
-<!-- #### Demo -->
-
-<!-- -   Cómo trabajar en archivos .py -->
-
-<!-- -   Cómo ver datasets y plots -->
-
-<!-- -   Cómo hacer reportes y notebooks -->
-
-<!-- -   Cómo programar en multilenguaje -->
-
-<!-- -   Cómo hacer presentaciones -->
-
-<!-- -   Enfocarse en el contenido y el formato después -->
-
 ## En resumen
 
 ::: {.fragment .fade-up}
@@ -420,7 +385,7 @@ tbl |>
 ## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
-![](figures/thats_the_neat.jpg){fig-align="center" height="550"}
+![](figures/meme_production.png){fig-align="center" height="550"}
 :::
 
 ## Referencias
