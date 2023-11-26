@@ -4,7 +4,7 @@
 
 - Mostrar paréntesis mal cerrado, punto y autocompletado en JN.
 - Mostrar intellisense en JL.
-- Mostrar paréntesis mal cerrado e intellisense en VSCode. Agregar help de iloc en  en JN
+- Mostrar paréntesis mal cerrado e intellisense en VSCode en .py. Agregar help de iloc en  en JN (solo mencionar)
 
 ## Multilenguaje
 
