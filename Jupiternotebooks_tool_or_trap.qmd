@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebooks en el entorno laboral"
 subtitle: "¿Herramienta o trampa?"
-author: "Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
+author: "en_coders: Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
 date: last-modified
 date-format: "DD-MM-YYYY"
 title-block-banner: "#27445C"
@@ -49,7 +49,7 @@ format:
 
 <li><font size = "5"> 5 Años de experiencia </font></li>
 
-<li><font size = "5"> Data Manager en Walmart </font></li>
+<li><font size = "5"> Data Manager en Walmart Chile </font></li>
 
 </ul>
 :::
@@ -59,7 +59,7 @@ format:
 :::
 
 ::: {.column width="30%"}
-![](figures/linkedin.jpg) <font size = "6"> **Rodolfo Nuñez** </font>
+![](figures/Foto_Rodo_2.jpg) <font size = "6"> **Rodolfo Nuñez** </font>
 
 <ul style="list-style-type:square">
 
@@ -79,7 +79,7 @@ format:
 
 <ul style="list-style-type:square">
 
-<li><font size = "5"> 7 Años de experiencia </font></li>
+<li><font size = "5"> 10 Años de experiencia </font></li>
 
 <li><font size = "5"> Data Scientist Expert Senior en Entel </font></li>
 
@@ -93,7 +93,8 @@ format:
 ::: {.column width="30%"}
 ![](figures/twitch_logo.png) <font size ="6"> **Twitch** </font>
 
-<font size = "4">Los streaming son todos los martes de 7Pm a 9Pm hora chilena </font>
+<h7>Los streaming son todos los martes de **7Pm a 9Pm hora chilena**</h7>
+
 :::
 
 ::: {.column width="5%"}
@@ -103,7 +104,7 @@ format:
 ::: {.column width="30%"}
 ![](figures/youtube_logo.png) <font size="6"> **Youtube** </font>
 
-<font size="4"> Resubimos los videos de los streaming editados a youtube </font>
+<h7> Resubimos los **videos** de los streaming editados a youtube </h7>
 :::
 
 ::: {.column width="5%"}
@@ -113,15 +114,31 @@ format:
 ::: {.column width="30%"}
 ![](figures/discord_logo.png) <font size="6"> **Discord** </font>
 
-<p class="small_linespace">
 
-<font size = "4"> Tenemos un discord para la comunidad donde compartimos links útiles, resolvemos dudas, recibimos sugerencias entre otras cosas </font>
+<h7> Tenemos un discord para la comunidad donde compartimos **links útiles**, resolvemos **dudas**, recibimos **sugerencias** entre otras cosas </h7>
 
-</p>
 :::
 :::
 
-## Motivacion del problema
+## Los Jupyter Notebooks que SON
+
+![](figures/que_es_un_jupyter.png)
+
+## Los Jupyter Notebooks que NO son: Jupyter Lab
+
+![](figures/jupyter_lab.png)
+
+
+## Los Jupyter Notebooks que NO son: Visual Studio Code
+
+![](figures/vs_code_jupyter.png)
+
+## Los Jupyter Notebooks que SON: formato .ipynb
+
+![](figures/formato_ipynb.png)
+
+
+## Motivación del problema
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
@@ -135,19 +152,46 @@ format:
 
 ## Notebooks: Puente entre Código y Ciencia de Datos para Estudiantes
 
-![](figures/meme_educativo_1.jpg){fig-align="centered"}
+::: columns
 
-Facilitación del Aprendizaje de Programación para No Desarrolladores
+::: {.column width="50%"}
+- Facilitación del aprendizaje de programación para **no desarrolladores**
 
+![](figures/loco_programando.png){fig-align="centered" height="300"}
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="40%"}
+![](figures/meme_educativo_1.jpg){fig-align="right"}
+:::
+
+
+
+:::
 ## Actividades Clave para Científicos de Datos en Empresas
 
+::: columns
+
+::: {.column width="50%"}
+1. Análisis exploratorio
+2. Creación de reportes
+3. Desarrollo de aplicativo analítico.
+:::
+
+::: {.column width="10%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="40%"}
+<!-- empty column to create gap -->
 ![](figures/meme_meme_laboral_1.jpg){fig-align="centered"}
-
-1.  Análisis exploratorio
-2.  Creación de reportes
-3.  Desarrollo de aplicativo analítico.
+:::
 
 
+:::
 ## Análisis exploratorio
 
 ::: columns
@@ -164,7 +208,7 @@ Facilitación del Aprendizaje de Programación para No Desarrolladores
 
 ::: columns
 ::: {.column width="50%"}
-![](figures/meme_reporte_meme_1.jpg){fig-align="left"}
+![](figures/meme_reporte_meme_1.jpg){fig-align="left" height="600"}
 :::
 ::: {.column width="50%"}
 ![](figures/meme_reporte_meme_2.jpg){fig-align="right"}
@@ -182,7 +226,7 @@ Facilitación del Aprendizaje de Programación para No Desarrolladores
 :::
 :::
 
-## Alternativas, sus pros y contras
+## Alternativas: Sus pros y contras
 
 ```{r}
 library(tidyverse)
@@ -342,7 +386,7 @@ tbl |>
 ## En resumen
 
 ::: {.fragment .fade-up}
--   Jupyter Notebook es una herramienta sub-óptima en todo aspecto, las mejoras en sus funcionalidades mas bien vienen de las features de otras IDE/herramientas como Jupyterlab, VS Code, nbdev más que de el mismo.
+-   Jupyter Notebook es una herramienta sub-óptima en todo aspecto, las **mejoras** en sus funcionalidades mas bien vienen de las **features de otras IDE/herramientas como Jupyterlab**, VS Code, nbdev más que de el mismo.
 :::
 
 ::: {.fragment .fade-up}
@@ -377,6 +421,12 @@ tbl |>
 ::: {.fragment .fade-up}
 ![](figures/joel_grus.jpg){fig-align="centered"}
 :::
+
+## 
+
+<h8> ¿Alguna duda? </h8>
+
+
 
 <!-- ## Tareas -->
 
