@@ -1,43 +1,55 @@
+# Presentación
+
 Hola
 
 Hola a todos, soy Christian Villarroel, me pueden decir Chris. Y me desempeñó como Expertos Senior Data Scientist en Entel, es un rol de subgerente técnico. Mis responsabilidades son definir la metodología y herramienta para la explotación de los datos en la compañía
 
-Educativo y Laboral
+# Educativo y Laboral
 
-Como herramienta de educación entiendo la utilidad de los Notebooks. En los últimos cinco años, he liderado a docenas de científicos de datos con distintas formaciones académicas, desde ingeniero comercial, industriales, electrónicos, estadísticos, matemáticos a astrónomos. Y mi propia formación universitaria es de ingeniero comercial. No somos desarrollares de software y sé lo difícil y abstracto que es empezar a programar y una herramienta como notebook apoya a ir entiendo que hacer cada línea de código porque lo puede observar directamente en la herramienta y sin preocuparme mucho de la infraestructura que existe por debajo.
+Como herramienta de educación entiendo la utilidad de los Notebooks. En los últimos cinco años, he liderado a docenas de científicos de datos con distintas formaciones académicas, desde ingeniero comercial, industriales, electrónicos, estadísticos, matemáticos a astrónomos. Y mi propia formación universitaria es de ingeniero comercial. No somos desarrollares de software y sé lo difícil y abstracto que es empezar a programar. Una herramienta como un notebook apoya a entender que hace cada línea de código porque uno lo puede observar directamente en la herramienta y sin preocuparme mucho de la infraestructura que existe por debajo.
 
-Por el lado labora, tenemos que empezar a definir cuáles son las actividades que hacer un científico de datos dentro de una empresa, para analizar que herramientas apoya en la ejecución efectiva de las tareas en  cada una de estas actividades. Estas son análisis exploratorio, creación de reportes y desarrollo de aplicativo analítico.
+Hablemos de 3 actividades importantes que hacen los científicos de datos en una empresa y analicemos cómo apoyan o perjudican los Jupyter Notebook a la ejecución efectiva de estas tareas.
 
-Exploratorio
+- Análisis exploratorio
+- Creación de reportes  
+- Desarrollo de un aplicativo analítico
 
-El análisis exploratorio es una actividad importante al un comienzo de un proyecto, tenemos que asegurar la calidad y entender los datos que vamos a ocupar, para que pase la famosa frase de 'garbage in, garbage out'. Es un proceso bastante iterativo donde es necesario observar tablas de datos, gráficos, métricas y documentar los resultados encontrados o las hipótesis que encontramos en data que vamos a validar en otra etapa. Los notebooks son una buena herramienta para realizar estas actividades. Si contamos con un ambiente con esta herramienta, es fácil ir a ejecutar celda por celda para observar las tablas y gráficos resultantes y documentar todo en un mismo ambiente.
+# Análisis exploratorio
 
-Si lo notaron, mencione notebooks, que es un concepto que engloba herramientas como 'Jupyter notebooks' y a las alternativas que vamos a mencionar más adelante.
+El análisis exploratorio es una actividad importante al un comienzo de un proyecto. Tenemos que entender qué datos utilizaremos y asegurar su calidad. De lo contrario, podría materializarse la famosa frase 'garbage in, garbage out'. Éste es un proceso bastante iterativo donde es necesario observar tablas de datos, gráficos, métricas y documentar los resultados o hipótesis encontradas. Los notebooks son una buena herramienta para realizar estas actividades. Si contamos con un ambiente con esta herramienta, es fácil ejecutar celda por celda para observar las tablas y gráficos resultantes, documentando todo en un mismo ambiente.
 
+Si lo notaron, mencione notebooks, que es un concepto que engloba herramientas como Jupyter Notebook y a las alternativas que vamos a mencionar más adelante.
 
+## Linting e IntelliSense
 
--+ En una oportunidad, con un colega del equipo, estamos revisando una nueva fuente, información y queríamos validar si tienen los datos que estábamos esperando. El tiempo para validar era acotado porque teníamos que comunicar con la contraparte dentro de la próxima hora. Y una buena herramienta para avanzar de buena forma fue contar con un IDE que tiene la opción de 'linting' e 'IntelliSense', los cuales facilitan la escritura de código más limpio, eficiente y libre de errores. Veremos que 'Jupyter notebooks' no cuenta con esta opción.
+- En una oportunidad, con un colega del equipo, estábamos revisando una nueva fuente de información y queríamos validar si tenían los datos que estábamos esperando. El tiempo para validar era acotado porque teníamos que comunicar los hallazgos a la contraparte dentro de la próxima hora. Una buena herramienta para avanzar rápido fue una IDE con funcionalidades de 'linting' e 'IntelliSense', los cuales facilitan la escritura de código más limpio, eficiente y libre de errores. Los Jupyter Notebooks cuentan con una forma limitada de estas funcionalidades.
 
--+ En la empresa hay personas tiene un favoritismo por Python, R incluso hay uno por Julia. Cada lenguaje tiene sus pro y contras. Suelo programar los modelos en Python, pero me gusta graficar con ggplot de R, entonces contar con un ambiente de trabajo que permita ocupar multi-lenguaje para tener la opción de elegir el mejor lenguaje para cada ocasión es relevante. . Veremos que 'Jupyter notebooks' no cuenta con esta opción.
+## Multilenguaje
 
+- En la empresa en donde trabajo hay personas que tienen favoritismo por Python, R incluso Julia. Cada lenguaje tiene sus pro y contras. Suelo programar los modelos en Python, pero me gusta graficar con ggplot de R, entonces contar con un ambiente de trabajo que permita ocupar multi-lenguaje para tener la opción de elegir el mejor lenguaje para cada ocasión es relevante para mi. Veremos que Jupyter Notebook no cuenta con esta opción.
 
+# Creación de reportes 
 
-Reporte
+Al generar un reporte, queremos obtener un documento para informar los  resultados que encontramos en nuestro análisis a nuestro cliente de negocio, jefatura, colegas, etc.
 
-En la actividad de la generación de reporte, queremos generar un documento para informar los  resultados que encontramos en nuestro análisis a nuestro cliente de negocio, jefatura o colegas.
+## Orden de ejecusión
 
--+ A diferencia del análisis exploratorio, aquí es muy relevante que el código sea reproducible, es decir, que al ejecutar el código se obtenga siempre el mismo resultado. 'Jupyter notebooks' se presta para malas prácticas de ejecutar comando en distintos órdenes.
+- Es muy relevante que el código sea reproducible, es decir, que al ejecutar el código se obtenga siempre el mismo resultado. Jupyter Notebook se presta para malas prácticas, como ejecutar celdas en distinto órden, sin que quede evidencia de aquello.
 
--+ Otro punto importante en el ámbito laboral, es tener cuidado y proteger los datos sensibles y privados de nuestro cliente. 'Jupyter notebooks' es peligro en este ámbito porque guarda esta información en el archivo JSON que luego uno puede publicar en un repositorio de git.
+## Seguridad
 
+- Otro punto importante en el ámbito laboral, es tener cuidado y proteger los datos sensibles y privados de nuestros clientes. Jupyter Notebook es peligro en este ámbito porque guarda esta información en el archivo JSON que luego uno puede publicar en un repositorio de Git.
 
+# Desarrollo de un aplicativo analítico
 
-Desarrollo
+Por último, tenemos la que en mi opinión, es la actividad más importante para  un científico de datos. El desarrollo de un aplicativo analítico. Aquí hay que entender que no es un desarrollo individual, sino un desarrollo para la empresa, donde hay que seguir las metodologías y prácticas definidas en lugar trabajo. Estas prácticas promueven el buen uso de los recursos, herramientas e infraestructura y permiten trabajar en equipo y a la vez documentar el proyecto de forma orgánica.
 
-Por último, tenemos la actividad más importante para  un científico de datos. Desarrollo de un aplicativo analítico. Aquí hay que entender que no es un desarrollo individual, sino un desarrollo para la empresa, donde tengo que seguir las metodologías y prácticas definidas en lugar trabajo. Estas prácticas promueven el buen uso de los recursos, herramientas e infraestructura y permite trabajar en equipo y a la vez documentar el proyecto de forma orgánica.
+Nombraré 2 tareas dentro de esta actividad donde los Jupyter notebooks presentan problemas para su ejecución y rodo presentara los detalla en vivo.
 
-Nombraré 4 tareas dentro de esta actividad donde 'Jupyter notebooks' presenta problemas para su ejecución y rodo presentara los detalla en vivo.
+## Formato JSON
 
--+ La primera tarea que les quiero comentar, es poder trabajar con control de versión de código, porque nos permite ver los cambios incrementales que se van programando. Por ejemplo, me ha tocado trabajar en paralelo con otro colega y él avanzó usando jupyter notebook y cuando me metí a revisar sus cambios para entender lo que había hecho, me encuentre con 700 líneas editadas. Esto es porque Júpiter es un json por debajo. Por esto dificulta trabajar esta herramienta.
+- La primera tarea que les quiero comentar, es poder trabajar con control de versión de código, porque nos permite ver los cambios incrementales que se van programando. Por ejemplo, me ha tocado trabajar en paralelo con otro colega que avanzó usando jupyter notebook. Cuando me metí a revisar sus cambios para entender lo que había hecho, me encontre con 700 líneas editadas. Esto es porque Júpiter es un JSON por debajo. Esto dificulta trabajar colaborativamente con esta herramienta.
 
--+ El desarrollo de un proyecto analítico tiene un problema particular por que no solo tengo que asegurar que el codig funcione de inicio a fin si no que tambien tengo asegurar me que transforamciones tengan logica de negocio. Para asegurar un buen resultado de las preciones por ejemplo o si hay un resultado no esperado tengo que ser capaz de revisa rel codign de inicio a fin y esto se hace normalmente indicando el script con eproblenm ae ir ejecutano linea por linea para validar las transformacion aplicadas. Aqui he tenido que revisar esto en jupytenotebook me cuesta porque esta programand oque se ejcuete celda por celda entonce tengo que interveni mucho el codigo para ir ejecuando linea por linea.
+## Ejecutar código exclusivamente en celdas
+
+- Otro problema del desarrollo de un proyecto analítico es que no solo hay que asegurar que el código funcione de principio a fin, sino que tambien hay que asegurar que las transforamciones tengan logica de negocio. Para asegurar un buen resultado de las predicciones, hay que ejecutar de manera minuciosa cada sección de código, asegurando que cada transformación de datos u otras operaciones hacen lo que deberían hacer. Cuando he tenido que revisar esto en Jupyte Notebook, me ha costado, porque te obliga a ejecutar celda por celda. Esto hace que uno tenga que intervenir mucho el codigo para ir ejecuando cada detalle.
