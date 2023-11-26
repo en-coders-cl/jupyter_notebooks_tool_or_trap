@@ -351,6 +351,14 @@ funcionalidades_en_orden = c(
 
 tbl =
   data_alternativas |>
+  left_join(
+    funcionalidades_en_orden |>
+      as.data.frame() |>
+      mutate(orden_funcionalidades = row_number()),
+    by = c("Funcionalidad" = "funcionalidades_en_orden")
+  ) |>
+  arrange(orden_funcionalidades) |>
+  select(-orden_funcionalidades) |>
   gt::gt()
 
 tbl |>
@@ -363,12 +371,6 @@ tbl |>
     source_notes.padding = gt::px(1),
     row_group.padding = gt::px(1)
   ) 
-```
-
-```{r}
-
-data_alternativas
-
 ```
 
 ::: r-stack
