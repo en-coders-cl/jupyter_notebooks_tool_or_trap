@@ -1,6 +1,17 @@
 ---
 title: ¡Llena ese carrito!
-format: html
+format: 
+ html:
+  theme: darkly
+  embed-resources: true
+  smooth-scroll: true
+  fontcolor: black
+  toc: true
+  toc-location: left
+  toc-title: Summary
+  toc-depth: 3
+  css: styles.css
+  logo: figures/Logo_principalEncoders.jpg
 jupyter: python3
 project: 
   execute-dir: project
