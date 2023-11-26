@@ -1,0 +1,42 @@
+---
+title: "Ejemplo multilenguage"
+format: 
+ html:
+  theme: darkly
+---
+
+# Ejemplo multilenguaje
+
+```{r}
+library(reticulate)
+library(tidyverse)
+data("penguins", package = "palmerpenguins")
+```
+
+```{r}
+penguins_summarized =
+  penguins |>
+  group_by(species) |>
+  summarise(mean_bill_length =
+              bill_length_mm |>
+              mean(na.rm = T))
+```
+
+```{python}
+penguins=r.penguins_summarized
+penguins
+```
+
+```{python}
+data_filtered = penguins.query('species=="Adelie"|species=="Gentoo"')
+data_filtered
+
+```
+
+```{r}
+py$data_filtered |> 
+  ggplot(aes(x = species, 
+             y = mean_bill_length, 
+             fill = species)) +
+  geom_col()
+```
