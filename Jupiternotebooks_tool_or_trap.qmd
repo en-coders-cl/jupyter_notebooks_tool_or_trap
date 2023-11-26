@@ -186,11 +186,11 @@ format:
 ## Análisis exploratorio
 
 ::: columns
-::: {.column width="50%"}
+::: {.fragment .column width="50%"}
 ![](figures/meme_exploratorio_meme_1.jpg){fig-align="left"}
 :::
 
-::: {.column width="50%"}
+::: {.fragment .column width="50%"}
 ![](figures/meme_exploratorio_meme_2.jpg){fig-align="right"}
 :::
 :::
@@ -198,11 +198,11 @@ format:
 ## Creación de reportes
 
 ::: columns
-::: {.column width="50%"}
+::: {.fragment .column width="50%"}
 ![](figures/meme_reporte_meme_1.jpg){fig-align="left" height="600"}
 :::
 
-::: {.column width="50%"}
+::: {.fragment .column width="50%"}
 ![](figures/meme_reporte_meme_2.png){fig-align="right"}
 :::
 :::
@@ -210,12 +210,12 @@ format:
 ## Desarrollo de aplicativo analítico.
 
 ::: columns
-::: {.column width="50%"}
+::: {.fragment .column width="50%"}
 ![](figures/meme_desarrollo_meme_1.jpg){fig-align="left"}
 :::
 
-::: {.column width="50%"}
-![](figures/meme_desarrollo_meme_2.jpg){fig-align="right"}
+::: {.fragment .column width="50%"}
+![](figures/meme_desarrollo_meme_2.png){fig-align="right"}
 :::
 :::
 
@@ -333,6 +333,22 @@ data_alternativas =
   )) |> 
   select(-nbdev)
 
+funcionalidades_en_orden = c(
+  "Linting",
+  "Intellisense",
+  "Multilenguaje",
+  "No hay problema con reproducibilidad por orden de ejecución",
+  "Seguridad",
+  "No hay problema con formato JSON de archivos",
+  "Versionado con Git",
+  "Run selected text",
+  "Debugger",
+  "No hay problema con ambientes distintos",
+  "Plots no detienen el progreso",
+  "Tablas bien visualizadas"
+)
+
+
 tbl =
   data_alternativas |>
   gt::gt()
@@ -347,6 +363,12 @@ tbl |>
     source_notes.padding = gt::px(1),
     row_group.padding = gt::px(1)
   ) 
+```
+
+```{r}
+
+data_alternativas
+
 ```
 
 ::: r-stack
