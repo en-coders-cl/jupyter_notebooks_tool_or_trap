@@ -75,7 +75,7 @@ format:
 :::
 
 ::: {.column width="30%"}
-![](figures/chris.png) <font size = "6"> **Christian Villaroel** </font>
+![](figures/chris.png) <font size = "6"> **Christian Villarroel** </font>
 
 <ul style="list-style-type:square">
 
