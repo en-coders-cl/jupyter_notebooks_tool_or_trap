@@ -10,3 +10,13 @@
   max-width: unset !important;
   max-height: unset !important;
 }
+
+h7 {
+  display: block;
+  font-size: 0.6em;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em;
+  margin-left: 0;
+  margin-right: 0;
+
+}

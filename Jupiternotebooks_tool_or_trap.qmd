@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebooks en el entorno laboral"
 subtitle: "¿Herramienta o trampa?"
-author: "Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
+author: "en_coders: Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
 date: last-modified
 date-format: "DD-MM-YYYY"
 title-block-banner: "#27445C"
@@ -49,7 +49,7 @@ format:
 
 <li><font size = "5"> 5 Años de experiencia </font></li>
 
-<li><font size = "5"> Data Manager en Walmart </font></li>
+<li><font size = "5"> Data Manager en Walmart Chile </font></li>
 
 </ul>
 :::
@@ -59,7 +59,7 @@ format:
 :::
 
 ::: {.column width="30%"}
-![](figures/linkedin.jpg) <font size = "6"> **Rodolfo Nuñez** </font>
+![](figures/Foto_Rodo_2.jpg) <font size = "6"> **Rodolfo Nuñez** </font>
 
 <ul style="list-style-type:square">
 
@@ -79,7 +79,7 @@ format:
 
 <ul style="list-style-type:square">
 
-<li><font size = "5"> 7 Años de experiencia </font></li>
+<li><font size = "5"> 10 Años de experiencia </font></li>
 
 <li><font size = "5"> Data Scientist Expert Senior en Entel </font></li>
 
@@ -93,7 +93,8 @@ format:
 ::: {.column width="30%"}
 ![](figures/twitch_logo.png) <font size ="6"> **Twitch** </font>
 
-<font size = "4">Los streaming son todos los martes de 7Pm a 9Pm hora chilena </font>
+<h7>Los streaming son todos los martes de **7Pm a 9Pm hora chilena**</h7>
+
 :::
 
 ::: {.column width="5%"}
@@ -103,7 +104,7 @@ format:
 ::: {.column width="30%"}
 ![](figures/youtube_logo.png) <font size="6"> **Youtube** </font>
 
-<font size="4"> Resubimos los videos de los streaming editados a youtube </font>
+<h7> Resubimos los **videos** de los streaming editados a youtube </h7>
 :::
 
 ::: {.column width="5%"}
@@ -113,15 +114,26 @@ format:
 ::: {.column width="30%"}
 ![](figures/discord_logo.png) <font size="6"> **Discord** </font>
 
-<p class="small_linespace">
 
-<font size = "4"> Tenemos un discord para la comunidad donde compartimos links útiles, resolvemos dudas, recibimos sugerencias entre otras cosas </font>
+<h7> Tenemos un discord para la comunidad donde compartimos **links útiles**, resolvemos **dudas**, recibimos **sugerencias** entre otras cosas </h7>
 
-</p>
 :::
 :::
 
-## Motivacion del problema
+## Los Jupyter Notebooks que SON
+
+![](figures/que_es_un_jupyter.png)
+
+## Los Jupyter Notebooks que NO son: Jupyter Lab
+
+![](figures/jupyter_lab.png)
+
+
+## Los Jupyter Notebooks que NO son: Visual Studio Code
+
+![](figures/vs_code_jupyter.png)
+
+## Motivación del problema
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
