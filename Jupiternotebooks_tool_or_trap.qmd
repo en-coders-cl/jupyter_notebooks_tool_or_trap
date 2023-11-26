@@ -226,7 +226,7 @@ format:
 :::
 :::
 
-## Alternativas, sus pros y contras
+## Alternativas: Sus pros y contras
 
 ```{r}
 library(tidyverse)
