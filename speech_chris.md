@@ -32,7 +32,7 @@ Si lo notaron, mencione notebooks, que es un concepto que engloba herramientas c
 
 Al generar un reporte, queremos obtener un documento para informar los  resultados que encontramos en nuestro análisis a nuestro cliente de negocio, jefatura, colegas, etc.
 
-## Orden de ejecusión
+## Orden de ejecución
 
 - Es muy relevante que el código sea reproducible, es decir, que al ejecutar el código se obtenga siempre el mismo resultado. Jupyter Notebook se presta para malas prácticas, como ejecutar celdas en distinto órden, sin que quede evidencia de aquello.
 
