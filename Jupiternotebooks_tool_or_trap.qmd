@@ -380,20 +380,6 @@ tbl |>
 ![](figures/Quarto.JPG){.fragment .absolute top="100" right="0"}
 :::
 
-<!-- #### Demo -->
-
-<!-- -   Cómo trabajar en archivos .py -->
-
-<!-- -   Cómo ver datasets y plots -->
-
-<!-- -   Cómo hacer reportes y notebooks -->
-
-<!-- -   Cómo programar en multilenguaje -->
-
-<!-- -   Cómo hacer presentaciones -->
-
-<!-- -   Enfocarse en el contenido y el formato después -->
-
 ## En resumen
 
 ::: {.fragment .fade-up}
