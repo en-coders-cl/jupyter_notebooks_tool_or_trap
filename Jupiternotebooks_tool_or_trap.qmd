@@ -345,7 +345,7 @@ tbl =
 
 tbl |>
   gt::tab_options(
-    table.font.size = 13,
+    table.font.size = 23,
     data_row.padding = gt::px(1),
     summary_row.padding = gt::px(1),
     grand_summary_row.padding = gt::px(1),
