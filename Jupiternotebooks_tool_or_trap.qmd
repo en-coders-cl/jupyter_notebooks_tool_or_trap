@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Notebooks en el entorno laboral"
 subtitle: "¿Herramienta o trampa?"
-author: "en_coders: Matías Carvajal, Rodolfo Ñuñez, Christian Villaroel"
+author: "en_coders: Matías Carvajal, Rodolfo Ñuñez, Christian Villarroel"
 date: last-modified
 date-format: "DD-MM-YYYY"
 title-block-banner: "#27445C"
@@ -65,7 +65,7 @@ format:
 
 <li><font size = "5"> 7 Años de experiencia </font></li>
 
-<li><font size = "5"> Sr. Machine Learning Operations Engineer en Entel / Tutor de DS y DA en TripleTen </font></li>
+<li><font size = "5"> Sr. MLOps Engineer Entel / Tutor de DS y DA en TripleTen</font></li>
 
 </ul>
 :::
@@ -119,24 +119,23 @@ format:
 
 ## Qué SON los Jupyter Notebooks
 
-![](figures/JN.JPG)
+![](figures/JN.JPG){fig-align="centered"}
 
 ## Qué NO son los Jupyter Notebooks: Jupyter Lab
 
-![](figures/JL.JPG)
+![](figures/JL.JPG){fig-align="centered"}
 
 ## Qué NO son los Jupyter Notebooks: Visual Studio Code
 
-![](figures/vs_code_jupyter.png)
+![](figures/vs_code_jupyter.png){fig-align="centered"}
 
 ## Qué SON los Jupyter Notebooks: formato .ipynb
 
-![](figures/formato_ipynb.png)
+![](figures/formato_ipynb.png){fig-align="centered"}
 
 ## Motivación del problema
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
-
 
 ## Notebooks: Puente entre código y ciencia de datos para estudiantes
 
@@ -208,7 +207,7 @@ format:
 :::
 
 ::: {.fragment .column width="50%"}
-![](figures/meme_desarrollo_meme_2.png){fig-align="right"}
+![](figures/meme_desarrollo_meme_2.jpg){fig-align="right"}
 :::
 :::
 
@@ -385,7 +384,7 @@ tbl |>
 ## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
-![](figures/meme_production.png){fig-align="center" height="550"}
+![](figures/thats_the_neat.jpg){fig-align="center" height="550"}
 :::
 
 ## Referencias
@@ -423,6 +422,7 @@ tbl |>
 ## 
 
 <h8> ¿Alguna duda? </h8>
+<h9> Más dudas pueden ir a: https://discord.gg/xuqw3hcg </h9>
 
 <!-- ## Tareas -->
 

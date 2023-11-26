@@ -31,7 +31,6 @@
 ## Ejecutar código exclusivamente en celdas
 
 - Mostrar ejecución por celdas versus línea a línea en JL. Mostrar que hay dos ambientes distintos
-- Mostrar que en .py uno puede enviar el código a la terminal
 - Mostrar que en Quarto uno manda el código a la consola de ambas maneras.
 
 # Demo de alternativas
@@ -40,7 +39,6 @@
 
 - Cómo trabajar en archivos .py
 - Enviar a la terminal
-- Cursos se mueve hacia la siguiente línea
 - Posibilidad de trabajar con terminal interactiva y pura
 
 - Cómo ver datasets y plots
@@ -48,9 +46,6 @@
 
 ## Quarto
 
-- Plots se ven abajo
-- Documentación a mano
-- Control de foco de panel
 - Cómo hacer presentaciones
 - Enfocarse en el contenido y el formato después
 - Página de Getting Started
