@@ -386,7 +386,7 @@ tbl |>
 ## En resumen
 
 ::: {.fragment .fade-up}
--   Jupyter Notebook es una herramienta sub-óptima en todo aspecto, las mejoras en sus funcionalidades mas bien vienen de las features de otras IDE/herramientas como Jupyterlab, VS Code, nbdev más que de el mismo.
+-   Jupyter Notebook es una herramienta sub-óptima en todo aspecto, las **mejoras** en sus funcionalidades mas bien vienen de las **features de otras IDE/herramientas como Jupyterlab**, VS Code, nbdev más que de el mismo.
 :::
 
 ::: {.fragment .fade-up}
@@ -421,6 +421,12 @@ tbl |>
 ::: {.fragment .fade-up}
 ![](figures/joel_grus.jpg){fig-align="centered"}
 :::
+
+## 
+
+<h8> ¿Alguna duda? </h8>
+
+
 
 <!-- ## Tareas -->
 
