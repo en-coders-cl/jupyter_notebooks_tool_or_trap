@@ -2,6 +2,8 @@
 title: ¡Llena ese carrito!
 format: html
 jupyter: python3
+project: 
+  execute-dir: project
 ---
 
 
@@ -63,11 +65,11 @@ import matplotlib.pyplot as plt
 ```{python}
 #| id: ad36396d
 # leer conjuntos de datos en DataFrames
-orders         = pd.read_csv('../datasets/input/instacart_orders.csv', sep=';')
-products       = pd.read_csv('../datasets/input/products.csv', sep=';')
-departments    = pd.read_csv('../datasets/input/departments.csv', sep=';')
-aisles         = pd.read_csv('../datasets/input/aisles.csv', sep=';')
-order_products = pd.read_csv('../datasets/input/order_products.csv', sep=';')
+orders         = pd.read_csv('datasets/input/instacart_orders.csv', sep=';')
+products       = pd.read_csv('datasets/input/products.csv', sep=';')
+departments    = pd.read_csv('datasets/input/departments.csv', sep=';')
+aisles         = pd.read_csv('datasets/input/aisles.csv', sep=';')
+order_products = pd.read_csv('datasets/input/order_products.csv', sep=';')
 ```
 
 
