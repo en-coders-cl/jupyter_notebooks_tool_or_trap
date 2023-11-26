@@ -137,7 +137,6 @@ format:
 
 ![](figures/porque_queremos_hablar_meme.jpg){fig-align="centered"}
 
-
 ## Notebooks: Puente entre código y ciencia de datos para estudiantes
 
 ::: columns
@@ -385,7 +384,7 @@ tbl |>
 ## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
-![](figures/meme_production.png){fig-align="center" height="550"}
+![](figures/thats_the_neat.jpg){fig-align="center"}
 :::
 
 ## Referencias
