@@ -366,20 +366,6 @@ tbl |>
   ) 
 ```
 
-::: r-stack
-![](figures/JN.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/JL.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/py_con_celdas.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/py_sin_celdas.JPG){.fragment .absolute top="100" right="0"}
-
-![](figures/nbdev.png){.fragment .absolute top="100" right="0"}
-
-![](figures/Quarto.JPG){.fragment .absolute top="100" right="0"}
-:::
-
 ## En resumen
 
 ::: {.fragment .fade-up}
