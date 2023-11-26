@@ -385,7 +385,7 @@ tbl |>
 ## En resumen {.placeholder-for-titleSlide visibility="uncounted"}
 
 ::: {.fragment .fade-up}
-![](figures/thats_the_neat.jpg){fig-align="center" height="550"}
+![](figures/meme_production.png){fig-align="center" height="550"}
 :::
 
 ## Referencias
