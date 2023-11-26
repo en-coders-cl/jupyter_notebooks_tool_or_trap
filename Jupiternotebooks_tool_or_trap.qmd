@@ -22,6 +22,7 @@ format:
     logo: figures/Logo_principalEncoders.jpg
     css: logo.css
     chalkboard: true
+    theme: dark
   # html:
   #   embed-resources: true
   #   smooth-scroll: true
