@@ -93,7 +93,9 @@ format:
 ::: {.column width="30%"}
 ![](figures/twitch_logo.png) <font size ="6"> **Twitch** </font>
 
-<h7>Los streaming son todos los martes de **7Pm a 9Pm hora chilena**</h7>
+<h7>Los streaming son todos los martes de **7Pm a 9Pm hora chilena.** [https://www.twitch.tv/](https://www.twitch.tv/en_coders)
+
+[en_coders](https://www.twitch.tv/en_coders)</h7>
 :::
 
 ::: {.column width="5%"}
@@ -103,7 +105,9 @@ format:
 ::: {.column width="30%"}
 ![](figures/youtube_logo.png) <font size="6"> **Youtube** </font>
 
-<h7> Resubimos los **videos** de los streaming editados a YouTube </h7>
+<h7> Resubimos los **videos** de los streaming editados a YouTube. [https://www.youtube.com/](https://www.youtube.com/@en_coders)
+
+[\@en_coders](https://www.youtube.com/@en_coders) </h7>
 :::
 
 ::: {.column width="5%"}
@@ -113,7 +117,7 @@ format:
 ::: {.column width="30%"}
 ![](figures/discord_logo.png) <font size="6"> **Discord** </font>
 
-<h7> Tenemos un Discord para la comunidad donde compartimos **links útiles**, resolvemos **dudas**, recibimos **sugerencias** entre otras cosas </h7>
+<h7> Tenemos un Discord para la comunidad donde compartimos **links útiles**, resolvemos **dudas**, recibimos **sugerencias** entre otras cosas. <https://discord.gg/xuqw3hcg> </h7>
 :::
 :::
 
@@ -421,7 +425,7 @@ tbl |>
 
 ## 
 
-<h8> ¿Alguna duda? </h8> <h9> Más dudas pueden ir a: https://discord.gg/xuqw3hcg </h9>
+<h8> ¿Alguna duda? </h8> <h9> Más dudas pueden ir a: <https://discord.gg/xuqw3hcg> </h9>
 
 <!-- ## Tareas -->
 
